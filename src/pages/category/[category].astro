@@ -1,0 +1,153 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import caliberData from '../../data/calibers.json';
+
+// 静的パスを生成
+export function getStaticPaths() {
+  const categories = ['Quartz', 'Digital', 'Mechanical', 'Other'];
+  
+  return categories.map((category) => ({
+    params: { category: category.toLowerCase() },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+
+// カテゴリ表示名
+const categoryLabels = {
+  'Quartz': 'クォーツ',
+  'Digital': 'デジタル',
+  'Mechanical': '機械式',
+  'Other': 'その他'
+};
+
+const categoryLabel = categoryLabels[category] || category;
+const categoryDescription = {
+  'Quartz': 'クォーツムーブメントを搭載した腕時計の取扱説明書。SEIKOのVX系、VJ系、7T系などの人気キャリバーを収録。',
+  'Digital': 'デジタル表示タイプの腕時計の取扱説明書。LCD表示のデジタルウォッチの操作ガイド。',
+  'Mechanical': '機械式ムーブメントを搭載した腕時計の取扱説明書。自動巻き・手巻きのモデル。',
+  'Other': 'その他のカテゴリに分類される腕時計の取扱説明書。'
+}[category];
+
+// カテゴリに属するキャリバーを取得
+const { caliberMap } = caliberData;
+const calibersInCategory = Object.keys(caliberMap).filter(
+  (caliber) => caliberMap[caliber][0]?.category === category
+).sort();
+
+// アルファベットでグループ化
+const groupedCalibers = calibersInCategory.reduce((acc, caliber) => {
+  const firstChar = caliber.charAt(0).toUpperCase();
+  if (!acc[firstChar]) acc[firstChar] = [];
+  acc[firstChar].push(caliber);
+  return acc;
+}, {});
+
+const groups = Object.keys(groupedCalibers).sort();
+---
+
+<Layout title={`${categoryLabel} カテゴリ`} description={categoryDescription}>
+  <div class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-sm text-watch-black/60 mb-8">
+        <a href="/" class="hover:text-gold-dark transition-colors">ホーム</a>
+        <span>/</span>
+        <span class="text-watch-black font-medium">{categoryLabel}</span>
+      </nav>
+
+      <!-- Header -->
+      <div class="mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 text-gold-dark rounded-full text-sm font-medium mb-4">
+          <span>カテゴリ</span>
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold text-watch-black mb-4">
+          {categoryLabel}
+        </h1>
+        <p class="text-watch-black/60 max-w-2xl">
+          {categoryDescription}
+        </p>
+        <p class="mt-4 text-watch-black/60">
+          全 <span class="font-semibold text-gold-dark">{calibersInCategory.length}</span> 個のキャリバーを収録
+        </p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="flex flex-wrap gap-2 mb-8 border-b border-cream-dark pb-4">
+        {Object.entries(categoryLabels).map(([key, label]) => (
+          <a 
+            href={`/category/${key.toLowerCase()}/`}
+            class={`inline-flex items-center px-4 py-2 rounded-lg font-medium transition-colors ${
+              key === category 
+                ? 'bg-gold text-white' 
+                : 'bg-white text-watch-black/70 hover:bg-cream'
+            }`}
+          >
+            {label}
+            <span class={`ml-2 text-xs ${key === category ? 'text-white/80' : 'text-watch-black/40'}`}>
+              {Object.keys(caliberMap).filter(c => caliberMap[c][0]?.category === key).length}
+            </span>
+          </a>
+        ))}
+      </div>
+
+      {calibersInCategory.length > 0 ? (
+        <>
+          <!-- Alphabet Navigation -->
+          <div class="mb-8 flex flex-wrap gap-2">
+            {groups.map((group) => (
+              <a 
+                href={`#group-${group}`}
+                class="inline-flex items-center justify-center w-10 h-10 bg-white border border-cream-dark rounded-lg font-medium text-watch-black hover:bg-gold hover:text-white hover:border-gold transition-colors"
+              >
+                {group}
+              </a>
+            ))}
+          </div>
+
+          <!-- Caliber List -->
+          <div class="space-y-12">
+            {groups.map((group) => (
+              <div id={`group-${group}`} class="scroll-mt-24">
+                <h2 class="font-display text-2xl font-bold text-gold-dark mb-6 flex items-center gap-3">
+                  <span class="flex items-center justify-center w-10 h-10 bg-gold text-white rounded-lg">
+                    {group}
+                  </span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                  {groupedCalibers[group].map((caliber) => (
+                    <a 
+                      href={`/caliber/${caliber}/`}
+                      class="group flex items-center justify-center p-4 bg-white border border-cream-dark rounded-xl hover:border-gold hover:shadow-md transition-all"
+                    >
+                      <span class="font-mono font-semibold text-watch-black group-hover:text-gold-dark transition-colors">
+                        {caliber}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div class="text-center py-16">
+          <div class="text-6xl mb-4">🔍</div>
+          <h3 class="font-display text-xl font-bold text-watch-black mb-2">
+            該当するキャリバーが見つかりません
+          </h3>
+          <p class="text-watch-black/60">
+            このカテゴリに分類されるキャリバーは現在ありません。
+          </p>
+          <a 
+            href="/caliber/"
+            class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gold hover:bg-gold-dark text-white font-medium rounded-lg transition-colors"
+          >
+            全キャリバーを見る
+          </a>
+        </div>
+      )}
+    </div>
+  </div>
+</Layout>

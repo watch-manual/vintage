@@ -1,0 +1,43 @@
+/* グローバルスタイル */
+
+/* Tailwindディレクティブ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムプロパティ */
+:root {
+  --cream: #F5F5DC;
+  --cream-dark: #E8E8D0;
+  --gold: #D4AF37;
+  --gold-light: #E5C555;
+  --gold-dark: #B8960C;
+  --silver: #C0C0C0;
+  --watch-black: #1A1A1A;
+}
+
+/* ベーススタイル */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', system-ui, sans-serif;
+  }
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-gold hover:bg-gold-dark text-white font-medium rounded-lg transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-gold text-gold-dark hover:bg-gold/10 font-medium rounded-lg transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-cream-dark;
+  }
+}

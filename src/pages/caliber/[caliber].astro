@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import caliberData from '../../data/calibers.json';
+
+// 静的パスを生成
+export function getStaticPaths() {
+  const { caliberMap } = caliberData;
+  
+  return Object.keys(caliberMap).map((caliber) => ({
+    params: { caliber },
+    props: { 
+      caliber,
+      files: caliberMap[caliber]
+    },
+  }));
+}
+
+const { caliber, files } = Astro.props;
+
+// 関連キャリバーを取得
+const allCalibers = Object.keys(caliberData.caliberMap).filter(c => c !== caliber);
+const relatedCalibers = allCalibers
+  .filter(c => {
+    // プレフィックスが同じものを関連とみなす
+    const prefix1 = caliber.replace(/[0-9]/g, '').substring(0, 2);
+    const prefix2 = c.replace(/[0-9]/g, '').substring(0, 2);
+    return prefix1 && prefix2 && prefix1 === prefix2;
+  })
+  .slice(0, 8);
+
+// カテゴリ表示名
+const categoryLabels = {
+  'Quartz': 'クォーツ',
+  'Digital': 'デジタル',
+  'Mechanical': '機械式',
+  'Other': 'その他'
+};
+---
+
+<Layout title={`${caliber} 取扱説明書`} description={`${caliber}の取扱説明書PDFを閲覧・ダウンロードできます。`}>
+  <div class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-sm text-watch-black/60 mb-8">
+        <a href="/" class="hover:text-gold-dark transition-colors">ホーム</a>
+        <span>/</span>
+        <a href="/caliber/" class="hover:text-gold-dark transition-colors">キャリバー一覧</a>
+        <span>/</span>
+        <span class="text-watch-black font-medium">{caliber}</span>
+      </nav>
+
+      <!-- Header -->
+      <div class="mb-8">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="inline-flex items-center px-3 py-1 bg-gold/10 text-gold-dark text-sm font-medium rounded-full">
+            {files[0]?.category ? (categoryLabels[files[0].category] || files[0].category) : 'その他'}
+          </span>
+          {files[0]?.isSupplement && (
+            <span class="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full">
+              補足文書
+            </span>
+          )}
+          {files[0]?.isSeries && (
+            <span class="inline-flex items-center px-3 py-1 bg-purple-50 text-purple-700 text-sm font-medium rounded-full">
+              シリーズ
+            </span>
+          )}
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-watch-black">
+          {caliber}
+          <span class="text-xl sm:text-2xl lg:text-3xl text-watch-black/60 font-normal ml-2">
+            取扱説明書
+          </span>
+        </h1>
+        {files.length > 0 && files[0].calibers.length > 1 && (
+          <p class="mt-4 text-watch-black/60">
+            このPDFには以下のキャリバーも含まれています: 
+            {files[0].calibers.filter(c => c !== caliber).join(', ')}
+          </p>
+        )}
+      </div>
+
+      <!-- PDF Viewer -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Main PDF Viewer -->
+        <div class="lg:col-span-2">
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-cream-dark">
+            <div class="p-4 bg-cream/50 border-b border-cream-dark flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-medium text-watch-black">{files[0]?.filename}</span>
+              </div>
+              <a 
+                href={`/pdf/${files[0]?.filename}`}
+                download
+                class="inline-flex items-center gap-2 px-4 py-2 bg-gold hover:bg-gold-dark text-white text-sm font-medium rounded-lg transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                ダウンロード
+              </a>
+            </div>
+            <div class="aspect-[4/3] bg-watch-black/5">
+              <iframe 
+                src={`/pdf/${files[0]?.filename}`}
+                class="w-full h-full"
+                title={`${caliber} 取扱説明書`}
+              >
+                <p class="p-8 text-center text-watch-black/60">
+                  PDFを表示できません。
+                  <a href={`/pdf/${files[0]?.filename}`} class="text-gold-dark hover:underline" download>
+                    ダウンロード
+                  </a>
+                  してください。
+                </p>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6">
+          <!-- File Info -->
+          <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
+            <h2 class="font-display text-lg font-bold text-watch-black mb-4">ファイル情報</h2>
+            <dl class="space-y-3 text-sm">
+              <div>
+                <dt class="text-watch-black/60">ファイル名</dt>
+                <dd class="font-mono text-watch-black">{files[0]?.filename}</dd>
+              </div>
+              <div>
+                <dt class="text-watch-black/60">カテゴリ</dt>
+                <dd class="text-watch-black">{files[0]?.category ? (categoryLabels[files[0].category] || files[0].category) : 'その他'}</dd>
+              </div>
+              {files[0]?.calibers.length > 1 && (
+                <div>
+                  <dt class="text-watch-black/60">含まれるキャリバー</dt>
+                  <dd class="flex flex-wrap gap-1 mt-1">
+                    {files[0].calibers.map((c) => (
+                      <a 
+                        href={`/caliber/${c}/`}
+                        class={`inline-block px-2 py-1 rounded text-xs ${c === caliber ? 'bg-gold text-white' : 'bg-cream hover:bg-cream-dark text-watch-black'}`}
+                      >
+                        {c}
+                      </a>
+                    ))}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          </div>
+
+          <!-- Related Calibers -->
+          {relatedCalibers.length > 0 && (
+            <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
+              <h2 class="font-display text-lg font-bold text-watch-black mb-4">関連キャリバー</h2>
+              <div class="flex flex-wrap gap-2">
+                {relatedCalibers.map((c) => (
+                  <a 
+                    href={`/caliber/${c}/`}
+                    class="inline-flex items-center px-3 py-1.5 bg-cream hover:bg-cream-dark text-watch-black text-sm rounded-lg transition-colors"
+                  >
+                    {c}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- All Files List -->
+          {files.length > 1 && (
+            <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
+              <h2 class="font-display text-lg font-bold text-watch-black mb-4">関連ファイル</h2>
+              <ul class="space-y-2">
+                {files.map((file, idx) => (
+                  <li>
+                    <a 
+                      href={`/pdf/${file.filename}`}
+                      download
+                      class="flex items-center gap-2 text-sm text-watch-black hover:text-gold-dark transition-colors"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+                      </svg>
+                      {file.filename}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

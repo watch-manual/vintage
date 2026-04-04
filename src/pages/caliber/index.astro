@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import caliberData from '../../data/calibers.json';
+
+const { caliberMap, categoryStats } = caliberData;
+const allCaliberNames = Object.keys(caliberMap).sort();
+
+// アルファベットでグループ化
+const groupedCalibers = allCaliberNames.reduce((acc, caliber) => {
+  const firstChar = caliber.charAt(0).toUpperCase();
+  if (!acc[firstChar]) acc[firstChar] = [];
+  acc[firstChar].push(caliber);
+  return acc;
+}, {});
+
+const groups = Object.keys(groupedCalibers).sort();
+
+// カテゴリ表示名
+const categoryLabels = {
+  'Quartz': 'クォーツ',
+  'Digital': 'デジタル',
+  'Mechanical': '機械式',
+  'Other': 'その他'
+};
+---
+
+<Layout title="キャリバー一覧" description="収録されている全キャリバーの一覧。アルファベット順で表示。">
+  <div class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-sm text-watch-black/60 mb-8">
+        <a href="/" class="hover:text-gold-dark transition-colors">ホーム</a>
+        <span>/</span>
+        <span class="text-watch-black font-medium">キャリバー一覧</span>
+      </nav>
+
+      <!-- Header -->
+      <div class="mb-12">
+        <h1 class="font-display text-3xl sm:text-4xl font-bold text-watch-black mb-4">
+          キャリバー一覧
+        </h1>
+        <p class="text-watch-black/60">
+          全 <span class="font-semibold text-gold-dark">{allCaliberNames.length}</span> 個のキャリバーを収録
+        </p>
+      </div>
+
+      <!-- Search -->
+      <div class="mb-12 max-w-2xl">
+        <div id="search" class="pagefind-ui"></div>
+      </div>
+
+      <!-- Alphabet Navigation -->
+      <div class="mb-8 flex flex-wrap gap-2">
+        {groups.map((group) => (
+          <a 
+            href={`#group-${group}`}
+            class="inline-flex items-center justify-center w-10 h-10 bg-white border border-cream-dark rounded-lg font-medium text-watch-black hover:bg-gold hover:text-white hover:border-gold transition-colors"
+          >
+            {group}
+          </a>
+        ))}
+      </div>
+
+      <!-- Caliber List -->
+      <div class="space-y-12">
+        {groups.map((group) => (
+          <div id={`group-${group}`} class="scroll-mt-24">
+            <h2 class="font-display text-2xl font-bold text-gold-dark mb-6 flex items-center gap-3">
+              <span class="flex items-center justify-center w-10 h-10 bg-gold text-white rounded-lg">
+                {group}
+              </span>
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+              {groupedCalibers[group].map((caliber) => {
+                const fileInfo = caliberMap[caliber][0];
+                return (
+                  <a 
+                    href={`/caliber/${caliber}/`}
+                    class="group flex flex-col p-4 bg-white border border-cream-dark rounded-xl hover:border-gold hover:shadow-md transition-all"
+                  >
+                    <span class="font-mono font-semibold text-watch-black group-hover:text-gold-dark transition-colors mb-1">
+                      {caliber}
+                    </span>
+                    <span class="text-xs text-watch-black/50">
+                      {categoryLabels[fileInfo?.category] || fileInfo?.category || 'その他'}
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.PagefindUI) {
+        new window.PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          showImages: false,
+          translations: {
+            placeholder: 'キャリバー番号で検索',
+            clear_search: 'クリア',
+            load_more: 'もっと見る',
+            search_label: '検索',
+            filters_label: 'フィルター',
+            zero_results: '「{query}」の検索結果はありません',
+            many_results: '「{query}」の検索結果（{count}件）',
+            one_result: '「{query}」の検索結果（1件）',
+          }
+        });
+      }
+    });
+  </script>
+</Layout>
