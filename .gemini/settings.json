@@ -4,5 +4,5 @@
     "architecture.md",
     "AGENTS.md"
   ],
-  "projectSpecificInstructions": "This project is built with Astro 5.x, Tailwind CSS, and Pagefind. It is a static site for vintage watch manuals (PDF library). All coding is done only by AI agents."
+  "projectSpecificInstructions": "This project is built with Astro 5.x, Tailwind CSS, and Pagefind. It is a static site for vintage watch manuals (PDF library). All coding is done only by AI agents. Agent-specific files are centralized at the project root and symlinked into .claude/, .gemini/, and .kimi/. Always edit the root source file, never the symlink. After modifying PDFs in public/pdf/, run `npm run generate-data` to regenerate src/data/calibers.json."
 }

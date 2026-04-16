@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vintage.watch-manual.workers.dev/sitemap.xml

@@ -9,6 +9,8 @@
     "preview": "npm run build && wrangler dev",
     "astro": "astro",
     "generate-data": "node scripts/generate-manifest.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "prebuild": "npm run generate-data && npm run generate-sitemap",
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {

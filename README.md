@@ -2,6 +2,11 @@
 
 SEIKO等の日本製腕時計の取扱説明書PDFを検索・閲覧できるサイトです。
 
+> **重要: このプロジェクトはAIエージェントのみがコーディングを行います。**
+> 人間はコードを直接編集せず、AIエージェントに指示を出すことで開発を進めます。
+> そのため、すべてのAIエージェント用ファイル（`.claude/`, `.gemini/`, `.kimi/`, `.agents/`）は
+> プロジェクトルートで一元管理し、シンボリックリンクで各ツールから参照しています。
+
 ## サイト情報
 
 - **サイト名**: オールド腕時計のキャリバー説明書ライブラリ
@@ -54,6 +59,9 @@ npm install
 # PDFメタデータを生成
 npm run generate-data
 
+# サイトマップを生成
+npm run generate-sitemap
+
 # 開発サーバーを起動
 npm run dev
 ```
@@ -95,7 +103,7 @@ npm run preview
 
 | 項目 | 設定値 |
 |-----|-------|
-| Build command | `npm run generate-data && npm run build` |
+| Build command | `npm run generate-data && npm run generate-sitemap && npm run build` |
 | Output directory | `dist` |
 | Root directory | `/` |
 
@@ -119,6 +127,17 @@ Pagefind を使用した全文検索を提供：
 - ビルド時に自動インデックス生成
 - 日本語対応（部分一致検索）
 - 検索対象：キャリバー番号 + ファイル名
+
+## AIエージェント向けファイル構成
+
+| ファイル | 役割 |
+|---------|------|
+| `.mcp.json` | MCPサーバー設定（`.kimi/mcp.json` の実体） |
+| `.claude/settings.json` | Claude Code の設定 |
+| `.gemini/settings.json` | Gemini CLI の設定 |
+| `.agents/skills/*.md` | AIエージェント共通スキル（`.claude/skills/`, `.kimi/skills/` から symlink 参照） |
+| `.claude/commands/*.md` | Claude Code カスタムコマンド |
+| `.claudeignore` | 無視ファイルリスト（`.geminiignore`, `.kimiignore` の実体） |
 
 ## ライセンス
 

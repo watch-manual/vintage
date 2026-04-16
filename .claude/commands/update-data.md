@@ -2,6 +2,13 @@
 
 Regenerate `src/data/calibers.json` from the current `public/pdf/` directory.
 
-Run: `npm run generate-data`
+## Command
 
-After running, report how many calibers were detected.
+```bash
+npm run generate-data
+```
+
+## After Running
+
+- Report how many calibers were detected.
+- If the count changed unexpectedly, review the filenames in `public/pdf/`.

@@ -3,6 +3,8 @@
 ## Overview
 This is a static site built with Astro 5.x for hosting vintage watch manual PDFs.
 
+> **AI Agent Only Development**: This project is maintained exclusively by AI agents. Human contributors provide instructions only. All agent-specific configurations are centralized at the project root and symlinked into tool-specific directories (`.claude/`, `.gemini/`, `.kimi/`).
+
 ## Tech Stack
 - Astro 5.x (Static Site Generation)
 - Tailwind CSS 3.x
@@ -25,3 +27,8 @@ This is a static site built with Astro 5.x for hosting vintage watch manual PDFs
 
 ## Build Process
 `npm run generate-data && npm run build`
+
+## Agent File Conventions
+- **Single source of truth**: `.claudeignore`, `.agents/skills/`, and `.mcp.json` live at the project root.
+- **Symlinks**: `.geminiignore`, `.kimiignore`, `.claude/skills`, `.kimi/skills`, and `.kimi/mcp.json` are symlinks to the root files/directories.
+- **Do not break symlinks**: If you need to edit an agent file, edit the root target, not the symlink.

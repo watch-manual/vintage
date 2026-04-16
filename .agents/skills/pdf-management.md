@@ -15,3 +15,4 @@ The `public/pdf/` directory contains ~615 vintage watch manual PDFs.
 ## Important Rules
 - Do NOT rename PDFs directly unless you also update the parser logic in `scripts/generate-manifest.js`.
 - After adding/removing PDFs, always run `npm run generate-data`.
+- PDFs are served statically; do not import them into Astro components.

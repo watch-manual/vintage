@@ -1,4 +1,14 @@
 node_modules/
 dist/
+.git/
+.astro/
+.wrangler/
+.vscode/
+.idea/
 pdf/
+public/pdf/
 package-lock.json
+*.log
+.DS_Store
+*.min.js
+*.min.css
