@@ -138,7 +138,7 @@ function inferCategory(filename) {
   
   // Digital系（Dで始まる、または特定パターン）
   if (/^[0-9]*D[0-9]/i.test(upper) || /^VD[0-9]/i.test(upper) || /DIGITAL/i.test(upper)) {
-    return 'Digital';
+    return 'Quartz';
   }
   
   // VX系（クォーツムーブメント）
@@ -158,7 +158,7 @@ function inferCategory(filename) {
   
   // 1A, 2A系（デジタル多し）
   if (/^[12]A[0-9]/i.test(upper)) {
-    return 'Digital';
+    return 'Quartz';
   }
   
   // 1E, 1M, 1N系（クォーツ）
@@ -183,7 +183,7 @@ function inferCategory(filename) {
   
   // A8系
   if (/^A8/i.test(upper)) {
-    return 'Digital';
+    return 'Quartz';
   }
   
   // S1系
@@ -203,7 +203,7 @@ function inferCategory(filename) {
   
   // 2xxx系（デジタル多し）
   if (/^2[0-9]{3}/i.test(upper)) {
-    return 'Digital';
+    return 'Quartz';
   }
   
   // その他の数字系
@@ -230,7 +230,7 @@ function inferCategory(filename) {
 
   // シリーズ
   if (/series/i.test(upper)) {
-    if (/[DM]\d*[_-]?series/i.test(upper)) return 'Digital';
+    if (/[DM]\d*[_-]?series/i.test(upper)) return 'Quartz';
     if (/[TVY]\d*[_-]?series/i.test(upper)) return 'Quartz';
     return 'Quartz';
   }
