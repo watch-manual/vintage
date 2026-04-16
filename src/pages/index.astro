@@ -30,12 +30,12 @@ import Layout from '../layouts/Layout.astro';
     // Pagefind の初期化
     window.addEventListener('DOMContentLoaded', () => {
       if (window.PagefindUI) {
-        new window.PagefindUI({
+        const ui = new window.PagefindUI({
           element: '#search',
           showSubResults: true,
           showImages: false,
           translations: {
-            placeholder: 'キャリバー番号で検索（例：7T32A）',
+            placeholder: 'キャリバー番号で検索（例：7123）',
             clear_search: 'クリア',
             load_more: 'もっと見る',
             search_label: '検索',
@@ -47,6 +47,7 @@ import Layout from '../layouts/Layout.astro';
             search_suggestion: '「{query}」の検索結果を表示しています',
           }
         });
+        ui.triggerSearch('7123');
       }
     });
   </script>
