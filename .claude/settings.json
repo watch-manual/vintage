@@ -1,0 +1,8 @@
+{
+  "defaultContextFiles": [
+    "README.md",
+    "architecture.md",
+    "AGENTS.md"
+  ],
+  "projectSpecificInstructions": "This project is built with Astro 5.x, Tailwind CSS, and Pagefind. It is a static site for vintage watch manuals (PDF library). All coding is done only by AI agents."
+}
