@@ -59,8 +59,13 @@ const currentYear = new Date().getFullYear();
     .pagefind-ui .pagefind-ui__search-input {
       font-size: 1.1rem;
       padding: 1rem 1.5rem;
+      padding-left: calc(54px * var(--pagefind-ui-scale));
       border: 2px solid var(--gold);
       border-radius: 9999px;
+    }
+
+    .pagefind-ui .pagefind-ui__search-clear {
+      display: none !important;
     }
     
     .pagefind-ui .pagefind-ui__search-input:focus {
