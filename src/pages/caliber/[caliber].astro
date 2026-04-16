@@ -211,80 +211,102 @@ const categoryLabels = {
     </div>
   </div>
 
+  <noscript>
+    <div class="bg-watch-black/5 min-h-[70vh] lg:min-h-[80vh] flex items-center justify-center p-4">
+      <div class="text-center">
+        <p class="text-watch-black/60 mb-4">JavaScriptが無効です。以下のリンクからPDFを開いてください。</p>
+        <a href={`/pdf/${mainFile?.filename}`} class="text-gold-dark hover:underline" target="_blank" rel="noopener noreferrer">PDFを開く</a>
+      </div>
+    </div>
+  </noscript>
+
   <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}` }}>
-    import * as pdfjsLib from '/pdfjs/pdf.min.mjs';
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.min.mjs';
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isIPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const container = document.querySelector('.bg-watch-black\\/5');
     
-    let pdfDoc = null;
-    let pageNum = 1;
-    let scale = window.innerWidth < 768 ? 0.5 : 1.5;
-    const canvas = document.getElementById('pdf-canvas');
-    const ctx = canvas.getContext('2d');
-    const pageNumEl = document.getElementById('page-num');
-    const pageCountEl = document.getElementById('page-count');
-    const zoomLevelEl = document.getElementById('zoom-level');
-    const prevBtn = document.getElementById('prev-page');
-    const nextBtn = document.getElementById('next-page');
-    const zoomOutBtn = document.getElementById('zoom-out');
-    const zoomInBtn = document.getElementById('zoom-in');
-    
-    function updateButtons() {
-      prevBtn.disabled = pageNum <= 1;
-      nextBtn.disabled = pdfDoc && pageNum >= pdfDoc.numPages;
-      zoomLevelEl.textContent = Math.round(scale * 100) + '%';
-    }
-    
-    async function renderPage() {
-      if (!pdfDoc) return;
-      const page = await pdfDoc.getPage(pageNum);
-      const viewport = page.getViewport({ scale });
-      
-      const outputScale = Math.min(window.devicePixelRatio || 1, 2);
-      canvas.width = Math.floor(viewport.width * outputScale);
-      canvas.height = Math.floor(viewport.height * outputScale);
-      canvas.style.width = Math.floor(viewport.width) + 'px';
-      canvas.style.height = Math.floor(viewport.height) + 'px';
-      
-      const transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
-      await page.render({ canvasContext: ctx, viewport, transform }).promise;
-      
-      pageNumEl.textContent = pageNum;
-      pageCountEl.textContent = pdfDoc.numPages;
-      updateButtons();
-    }
-    
-    pdfjsLib.getDocument({ url: pdfUrl }).promise.then((pdf) => {
-      pdfDoc = pdf;
-      renderPage();
-    }).catch((err) => {
-      console.error('PDF load error:', err);
-      canvas.parentElement.innerHTML = '<p class="p-8 text-center text-watch-black/60">PDFを読み込めませんでした。<br><a href="' + pdfUrl + '" class="text-gold-dark hover:underline" download>ダウンロード</a>してください。</p>';
-    });
-    
-    prevBtn.addEventListener('click', () => {
-      if (pageNum > 1) {
-        pageNum--;
-        renderPage();
+    if (isIOS || isIPadOS || isSafari) {
+      // Safari系ブラウザではネイティブPDFビューワーにフォールバック
+      if (container) {
+        container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-4"><embed src="' + pdfUrl + '" type="application/pdf" class="w-full rounded-lg shadow-xl bg-white" style="min-height:70vh;height:80vh;border:none;"></embed><p class="mt-4 text-sm text-watch-black/60">PDFが表示されない場合は <a href="' + pdfUrl + '" class="text-gold-dark hover:underline" target="_blank">こちらから開く</a></p></div>';
       }
-    });
-    
-    nextBtn.addEventListener('click', () => {
-      if (pdfDoc && pageNum < pdfDoc.numPages) {
-        pageNum++;
-        renderPage();
-      }
-    });
-    
-    zoomOutBtn.addEventListener('click', () => {
-      scale = Math.max(0.5, scale - 0.25);
-      renderPage();
-    });
-    
-    zoomInBtn.addEventListener('click', () => {
-      scale = Math.min(3.0, scale + 0.25);
-      renderPage();
-    });
-    
-    updateButtons();
+    } else {
+      import('/pdfjs/pdf.min.mjs').then((pdfjsLib) => {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.min.mjs';
+        
+        let pdfDoc = null;
+        let pageNum = 1;
+        let scale = window.innerWidth < 768 ? 0.5 : 1.5;
+        const canvas = document.getElementById('pdf-canvas');
+        const ctx = canvas.getContext('2d');
+        const pageNumEl = document.getElementById('page-num');
+        const pageCountEl = document.getElementById('page-count');
+        const zoomLevelEl = document.getElementById('zoom-level');
+        const prevBtn = document.getElementById('prev-page');
+        const nextBtn = document.getElementById('next-page');
+        const zoomOutBtn = document.getElementById('zoom-out');
+        const zoomInBtn = document.getElementById('zoom-in');
+        
+        function updateButtons() {
+          prevBtn.disabled = pageNum <= 1;
+          nextBtn.disabled = pdfDoc && pageNum >= pdfDoc.numPages;
+          zoomLevelEl.textContent = Math.round(scale * 100) + '%';
+        }
+        
+        async function renderPage() {
+          if (!pdfDoc) return;
+          const page = await pdfDoc.getPage(pageNum);
+          const viewport = page.getViewport({ scale });
+          
+          const outputScale = Math.min(window.devicePixelRatio || 1, 2);
+          canvas.width = Math.floor(viewport.width * outputScale);
+          canvas.height = Math.floor(viewport.height * outputScale);
+          canvas.style.width = Math.floor(viewport.width) + 'px';
+          canvas.style.height = Math.floor(viewport.height) + 'px';
+          
+          const transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
+          await page.render({ canvasContext: ctx, viewport, transform }).promise;
+          
+          pageNumEl.textContent = pageNum;
+          pageCountEl.textContent = pdfDoc.numPages;
+          updateButtons();
+        }
+        
+        pdfjsLib.getDocument({ url: pdfUrl }).promise.then((pdf) => {
+          pdfDoc = pdf;
+          renderPage();
+        }).catch((err) => {
+          console.error('PDF load error:', err);
+          canvas.parentElement.innerHTML = '<p class="p-8 text-center text-watch-black/60">PDFを読み込めませんでした。<br><a href="' + pdfUrl + '" class="text-gold-dark hover:underline" download>ダウンロード</a>してください。</p>';
+        });
+        
+        prevBtn.addEventListener('click', () => {
+          if (pageNum > 1) {
+            pageNum--;
+            renderPage();
+          }
+        });
+        
+        nextBtn.addEventListener('click', () => {
+          if (pdfDoc && pageNum < pdfDoc.numPages) {
+            pageNum++;
+            renderPage();
+          }
+        });
+        
+        zoomOutBtn.addEventListener('click', () => {
+          scale = Math.max(0.5, scale - 0.25);
+          renderPage();
+        });
+        
+        zoomInBtn.addEventListener('click', () => {
+          scale = Math.min(3.0, scale + 0.25);
+          renderPage();
+        });
+        
+        updateButtons();
+      });
+    }
   </script>
 </Layout>
