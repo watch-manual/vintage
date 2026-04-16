@@ -4,7 +4,7 @@ import caliberData from '../../data/calibers.json';
 
 // 静的パスを生成
 export function getStaticPaths() {
-  const categories = ['Quartz', 'Digital', 'Mechanical', 'Other'];
+  const categories = ['Quartz', 'Mechanical'];
   
   return categories.map((category) => ({
     params: { category: category.toLowerCase() },
@@ -17,17 +17,13 @@ const { category } = Astro.props;
 // カテゴリ表示名
 const categoryLabels = {
   'Quartz': 'クォーツ',
-  'Digital': 'デジタル',
-  'Mechanical': '機械式',
-  'Other': 'その他'
+  'Mechanical': '機械式'
 };
 
 const categoryLabel = categoryLabels[category] || category;
 const categoryDescription = {
-  'Quartz': 'クォーツムーブメントを搭載した腕時計の取扱説明書。SEIKOのVX系、VJ系、7T系などの人気キャリバーを収録。',
-  'Digital': 'デジタル表示タイプの腕時計の取扱説明書。LCD表示のデジタルウォッチの操作ガイド。',
-  'Mechanical': '機械式ムーブメントを搭載した腕時計の取扱説明書。自動巻き・手巻きのモデル。',
-  'Other': 'その他のカテゴリに分類される腕時計の取扱説明書。'
+  'Quartz': 'クォーツムーブメントを搭載した腕時計の取扱説明書。SEIKOのVX系、VJ系、7T系、デジタルクォーツなどの人気キャリバーを収録。',
+  'Mechanical': '機械式ムーブメントを搭載した腕時計の取扱説明書。自動巻き・手巻きのモデル。'
 }[category];
 
 // カテゴリに属するキャリバーを取得
