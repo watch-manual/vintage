@@ -83,7 +83,7 @@ const categoryLabels = {
       <div class="mb-8">
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-cream-dark">
           <!-- Toolbar -->
-          <div class="p-3 bg-cream/50 border-b border-cream-dark flex flex-wrap items-center justify-between gap-3">
+          <div id="pdf-toolbar" class="p-3 bg-cream/50 border-b border-cream-dark flex flex-wrap items-center justify-between gap-3">
             <div class="flex items-center gap-2">
               <a 
                 href={`/pdf/${mainFile?.filename}#view=FitH`}
@@ -130,7 +130,7 @@ const categoryLabels = {
           </div>
           
           <!-- Canvas Area -->
-          <div class="bg-watch-black/5 min-h-[70vh] lg:min-h-[80vh] flex items-start justify-center p-4 overflow-auto">
+          <div id="pdf-container" class="bg-watch-black/5 min-h-[70vh] lg:min-h-[80vh] flex items-start justify-center p-4 overflow-auto">
             <canvas id="pdf-canvas" class="shadow-xl max-w-full h-auto bg-white"></canvas>
           </div>
         </div>
@@ -223,14 +223,16 @@ const categoryLabels = {
   <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}` }}>
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const isIPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-    const isIOSSafari = (isIOS || isIPadOS) && /Safari/.test(navigator.userAgent) && !/(CriOS|FxiOS|Chrome|Edg)/.test(navigator.userAgent);
+    const isAppleMobile = isIOS || isIPadOS;
     const isDesktopSafari = !isIOS && !isIPadOS && /^((?!chrome|android|crios|edg).)*safari/i.test(navigator.userAgent);
-    const container = document.querySelector('.bg-watch-black\\/5');
-    
-    if (isIOSSafari || isDesktopSafari) {
-      // Safari系ブラウザではネイティブPDFビューワーにフォールバック
+    const container = document.getElementById('pdf-container');
+    const toolbar = document.getElementById('pdf-toolbar');
+
+    if (isAppleMobile || isDesktopSafari) {
+      // Safari / iOS Chrome などではネイティブPDFビューワーにフォールバック
+      if (toolbar) toolbar.style.display = 'none';
       if (container) {
-        container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-4"><embed src="' + pdfUrl + '" type="application/pdf" class="w-full rounded-lg shadow-xl bg-white" style="min-height:70vh;height:80vh;border:none;"></embed><p class="mt-4 text-sm text-watch-black/60">PDFが表示されない場合は <a href="' + pdfUrl + '" class="text-gold-dark hover:underline" target="_blank">こちらから開く</a></p></div>';
+        container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-4"><embed src="' + pdfUrl + '" type="application/pdf" class="w-full rounded-lg shadow-xl bg-white" style="min-height:70vh;height:80vh;border:none;"></embed><p class="mt-4 text-sm text-watch-black/60 text-center">ネイティブのPDFビューワーで表示しています。<br>左右にスワイプするか、画面下部のコントロールでページを移動してください。<br>PDFが表示されない場合は <a href="' + pdfUrl + '" class="text-gold-dark hover:underline" target="_blank">こちらから開く</a></p></div>';
       }
     } else {
       import('/pdfjs/pdf.min.mjs').then((pdfjsLib) => {
