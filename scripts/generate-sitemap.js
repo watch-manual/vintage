@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const BASE_URL = 'https://vintage.watch-manual.workers.dev';
+const BASE_URL = 'https://vintage.watchdoc.workers.dev';
 
 const calibersData = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/calibers.json'), 'utf-8'));
 

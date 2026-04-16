@@ -10,7 +10,7 @@ SEIKO等の日本製腕時計の取扱説明書PDFを検索・閲覧できるサ
 ## サイト情報
 
 - **サイト名**: オールド腕時計のキャリバー説明書ライブラリ
-- **URL**: https://vintage.watch-manual.workers.dev
+- **URL**: https://vintage.watchdoc.workers.dev
 - **デプロイ先**: Cloudflare Pages
 
 ## 技術スタック
