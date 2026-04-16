@@ -11,7 +11,7 @@ SEIKO等の日本製腕時計の取扱説明書PDFを検索・閲覧できるサ
 
 - **サイト名**: オールド腕時計のキャリバー説明書ライブラリ
 - **URL**: https://vintage.watchdoc.workers.dev
-- **デプロイ先**: Cloudflare Pages
+- **デプロイ先**: Cloudflare Workers
 
 ## 技術スタック
 
@@ -37,7 +37,7 @@ SEIKO等の日本製腕時計の取扱説明書PDFを検索・閲覧できるサ
 │   └── generate-sitemap.js   # サイトマップ生成スクリプト
 ├── astro.config.mjs    # Astro設定
 ├── tailwind.config.mjs # Tailwind設定
-└── _headers            # Cloudflare Pagesヘッダー設定
+└── _headers            # カスタムヘッダー設定
 ```
 
 ## ローカル開発
@@ -100,11 +100,11 @@ npm run preview
 | シリーズ | `2A_series.pdf` | `["2Aシリーズ"]` |
 | パート番号付き | `7D48-pt1.pdf` | `["7D48-pt1"]` |
 
-## Cloudflare Pages デプロイ設定
+## Cloudflare Workers デプロイ設定
 
 | 項目 | 設定値 |
 |-----|-------|
-| Build command | `npm run generate-data && npm run generate-sitemap && npm run build` |
+| Build command | `npm run build` |
 | Output directory | `dist` |
 | Root directory | `/` |
 
@@ -134,8 +134,9 @@ Pagefind を使用した全文検索を提供：
 | ファイル | 役割 |
 |---------|------|
 | `.mcp.json` | MCPサーバー設定（`.kimi/mcp.json` の実体） |
-| `.claude/settings.json` | Claude Code の設定 |
-| `.gemini/settings.json` | Gemini CLI の設定 |
+| `.agents/settings.json` | AIエージェント共通設定（`.claude/settings.json`, `.gemini/settings.json` から symlink 参照） |
+| `.claude/settings.json` | Claude Code の設定（symlink） |
+| `.gemini/settings.json` | Gemini CLI の設定（symlink） |
 | `.agents/skills/*.md` | AIエージェント共通スキル（`.claude/skills/`, `.kimi/skills/` から symlink 参照） |
 | `.claude/commands/*.md` | Claude Code カスタムコマンド |
 | `.claudeignore` | 無視ファイルリスト（`.geminiignore`, `.kimiignore` の実体） |

@@ -9,7 +9,7 @@ This is a static site built with Astro 5.x for hosting vintage watch manual PDFs
 - Astro 5.x (Static Site Generation)
 - Tailwind CSS 3.x
 - Pagefind (Search)
-- Cloudflare Pages (Hosting)
+- Cloudflare Workers (Hosting)
 
 ## Directory Structure
 - `src/`: Astro source code (components, layouts, pages, data)
@@ -26,9 +26,9 @@ This is a static site built with Astro 5.x for hosting vintage watch manual PDFs
 6. Pagefind indexes the built HTML for search
 
 ## Build Process
-`npm run generate-data && npm run build`
+`npm run build`
 
 ## Agent File Conventions
-- **Single source of truth**: `.claudeignore`, `.agents/skills/`, and `.mcp.json` live at the project root.
-- **Symlinks**: `.geminiignore`, `.kimiignore`, `.claude/skills`, `.kimi/skills`, and `.kimi/mcp.json` are symlinks to the root files/directories.
+- **Single source of truth**: `.claudeignore`, `.agents/skills/`, `.agents/settings.json`, and `.mcp.json` live at the project root.
+- **Symlinks**: `.geminiignore`, `.kimiignore`, `.claude/skills`, `.kimi/skills`, `.claude/settings.json`, `.gemini/settings.json`, and `.kimi/mcp.json` are symlinks to the root files/directories.
 - **Do not break symlinks**: If you need to edit an agent file, edit the root target, not the symlink.
