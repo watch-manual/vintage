@@ -6,15 +6,14 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "npm run build && wrangler dev",
+    "preview": "astro preview",
     "astro": "astro",
     "generate-data": "node scripts/generate-manifest.js",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "prebuild": "npm run generate-data && npm run generate-sitemap",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "wrangler pages deploy dist"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "12",
     "@astrojs/tailwind": "^6.0.0",
     "astro": "^5.0.0",
     "astro-pagefind": "^1.8.0",
@@ -25,10 +24,5 @@
   "devDependencies": {
     "glob": "^11.0.0",
     "wrangler": "^4.83.0"
-  },
-  "overrides": {
-    "@astrojs/cloudflare": {
-      "wrangler": "^4.83.0"
-    }
   }
 }

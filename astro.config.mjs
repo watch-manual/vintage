@@ -2,10 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import pagefind from 'astro-pagefind';
 
-import cloudflare from "@astrojs/cloudflare";
-
 export default defineConfig({
-  output: 'static',
   site: 'https://vintage.watch-manual.workers.dev',
 
   integrations: [
@@ -15,7 +12,5 @@ export default defineConfig({
 
   build: {
     format: 'directory'
-  },
-
-  adapter: cloudflare()
+  }
 });

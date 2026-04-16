@@ -33,7 +33,8 @@ SEIKO等の日本製腕時計の取扱説明書PDFを検索・閲覧できるサ
 ├── public/
 │   └── pdf/            # PDFファイル（615個）
 ├── scripts/
-│   └── generate-manifest.js  # データ生成スクリプト
+│   ├── generate-manifest.js  # データ生成スクリプト
+│   └── generate-sitemap.js   # サイトマップ生成スクリプト
 ├── astro.config.mjs    # Astro設定
 ├── tailwind.config.mjs # Tailwind設定
 └── _headers            # Cloudflare Pagesヘッダー設定
