@@ -217,7 +217,7 @@ const categoryLabels = {
     
     let pdfDoc = null;
     let pageNum = 1;
-    let scale = 1.5;
+    let scale = window.innerWidth < 768 ? 0.5 : 1.5;
     const canvas = document.getElementById('pdf-canvas');
     const ctx = canvas.getContext('2d');
     const pageNumEl = document.getElementById('page-num');
