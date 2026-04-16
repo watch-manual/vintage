@@ -231,31 +231,31 @@ const categoryLabels = {
       // iPhone では embed が機能不全なので、PDF.js で 1 ページ目だけレンダリングし、
       // フル表示はネイティブビューワーへ誘導する
       if (toolbar) toolbar.style.display = 'none';
+      container.innerHTML = '<div class="flex flex-col items-center justify-center p-4"><canvas id="pdf-canvas" class="shadow-xl max-w-full h-auto bg-white"></canvas><div id="pdf-action" class="mt-4 text-center"></div></div>';
+      const canvas = document.getElementById('pdf-canvas');
+      const actionBox = document.getElementById('pdf-action');
+
       import('/pdfjs/pdf.min.mjs').then((pdfjsLib) => {
-        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.min.mjs';
-        const canvas = document.getElementById('pdf-canvas');
+        // iPhone では worker 読み込みが不安定なことがあるため無効化（メインスレッドで処理）
+        pdfjsLib.GlobalWorkerOptions.workerSrc = '';
         const ctx = canvas.getContext('2d');
 
-        pdfjsLib.getDocument({ url: pdfUrl }).promise.then((pdf) => pdf.getPage(1)).then((page) => {
-          const scale = window.innerWidth < 768 ? 0.6 : 1.2;
+        return pdfjsLib.getDocument({ url: pdfUrl }).promise.then((pdf) => pdf.getPage(1)).then((page) => {
+          const scale = window.innerWidth < 768 ? 0.8 : 1.2;
           const viewport = page.getViewport({ scale });
-          const outputScale = Math.min(window.devicePixelRatio || 1, 2);
-          canvas.width = Math.floor(viewport.width * outputScale);
-          canvas.height = Math.floor(viewport.height * outputScale);
+          // iPhone では高解像度レンダリングで canvas が空白になるケースがあるため outputScale=1 でシンプルに描画
+          canvas.width = Math.floor(viewport.width);
+          canvas.height = Math.floor(viewport.height);
           canvas.style.width = Math.floor(viewport.width) + 'px';
           canvas.style.height = Math.floor(viewport.height) + 'px';
 
-          const transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
-          return page.render({ canvasContext: ctx, viewport, transform }).promise;
+          return page.render({ canvasContext: ctx, viewport }).promise;
         }).then(() => {
-          const action = document.createElement('div');
-          action.className = 'mt-4 text-center';
-          action.innerHTML = '<a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a><p class="mt-2 text-sm text-watch-black/60">SafariのPDFビューワーで全ページを閲覧できます</p>';
-          container.appendChild(action);
-        }).catch((err) => {
-          console.error('PDF preview error:', err);
-          container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-8 text-center"><p class="text-watch-black/80 mb-4">PDFのプレビューを表示できません。</p><a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a></div>';
+          actionBox.innerHTML = '<a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a><p class="mt-2 text-sm text-watch-black/60">SafariのPDFビューワーで全ページを閲覧できます</p>';
         });
+      }).catch((err) => {
+        console.error('PDF preview error:', err);
+        container.innerHTML = '<div class="flex flex-col items-center justify-center p-8 text-center"><p class="text-watch-black/80 mb-4">PDFのプレビューを表示できません。</p><a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a></div>';
       });
     } else if (isIPad || isDesktopSafari) {
       // iPad / デスクトップ Safari ではネイティブPDFビューワーにフォールバック
