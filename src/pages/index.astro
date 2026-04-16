@@ -1,23 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import caliberData from '../data/calibers.json';
-
-const { totalFiles, totalCalibers, categoryStats, caliberMap } = caliberData;
-
-// 人気キャリバー（適当に選定）
-const popularCalibers = ['7T32A', 'VX3', 'V157', '7N36', '7N42', 'Y121', 'VX42', 'VX3E'];
-const availablePopular = popularCalibers.filter(c => caliberMap[c]);
-
-// カテゴリ情報
-const categories = [
-  { id: 'Quartz', name: 'クォーツ', count: categoryStats.Quartz || 0, icon: '⚡', color: 'bg-blue-50 border-blue-200' },
-  { id: 'Digital', name: 'デジタル', count: categoryStats.Digital || 0, icon: '🔢', color: 'bg-green-50 border-green-200' },
-  { id: 'Other', name: 'その他', count: categoryStats.Other || 0, icon: '📋', color: 'bg-gray-50 border-gray-200' },
-];
-
-// ランダムなキャリバーをいくつか選出（最近追加などとして）
-const allCaliberNames = Object.keys(caliberMap);
-const recentCaliberNames = allCaliberNames.slice(0, 12);
 ---
 
 <Layout title="トップページ" description="オールド腕時計のキャリバー説明書を検索・閲覧。SEIKO等の日本製腕時計の取扱説明書を収集。">
@@ -37,113 +19,9 @@ const recentCaliberNames = allCaliberNames.slice(0, 12);
       <p class="text-lg sm:text-xl text-watch-black/70 mb-4 max-w-2xl mx-auto">
         SEIKO等の日本製腕時計の取扱説明書を検索・閲覧できます。
       </p>
-      <p class="text-watch-black/50 mb-10">
-        <span class="font-semibold text-gold-dark">{totalFiles}</span> 個のPDFファイル、
-        <span class="font-semibold text-gold-dark">{totalCalibers}</span> 個のキャリバーを収録
-      </p>
-      
       <!-- Search -->
       <div class="max-w-2xl mx-auto">
         <div id="search" class="pagefind-ui"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Categories Section -->
-  <section class="py-16 bg-white/50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-2xl sm:text-3xl font-bold text-watch-black text-center mb-12">
-        カテゴリから探す
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {categories.map((cat) => (
-          <a 
-            href={`/category/${cat.id.toLowerCase()}/`}
-            class={`group block p-8 rounded-2xl border-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${cat.color.replace('50', '100').replace('200', '300')}`}
-          >
-            <div class="text-4xl mb-4">{cat.icon}</div>
-            <h3 class="font-display text-xl font-bold text-watch-black mb-2 group-hover:text-gold-dark transition-colors">
-              {cat.name}
-            </h3>
-            <p class="text-watch-black/60">
-              {cat.count} ファイル
-            </p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Popular Calibers Section -->
-  {availablePopular.length > 0 && (
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-display text-2xl sm:text-3xl font-bold text-watch-black text-center mb-12">
-          人気のキャリバー
-        </h2>
-        <div class="flex flex-wrap justify-center gap-3">
-          {availablePopular.map((caliber) => (
-            <a 
-              href={`/caliber/${caliber}/`}
-              class="inline-flex items-center px-6 py-3 bg-white border-2 border-gold/30 rounded-full font-medium text-watch-black hover:bg-gold/10 hover:border-gold transition-all"
-            >
-              {caliber}
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Recent Calibers Section -->
-  <section class="py-16 bg-white/50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="font-display text-2xl sm:text-3xl font-bold text-watch-black">
-          キャリバー一覧
-        </h2>
-        <a href="/caliber/" class="text-gold-dark hover:text-gold font-medium">
-          すべて見る →
-        </a>
-      </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-        {recentCaliberNames.map((caliber) => (
-          <a 
-            href={`/caliber/${caliber}/`}
-            class="group flex items-center justify-center p-4 bg-white border border-cream-dark rounded-lg hover:border-gold hover:shadow-md transition-all"
-          >
-            <span class="font-mono font-semibold text-watch-black group-hover:text-gold-dark transition-colors">
-              {caliber}
-            </span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="py-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-watch-black rounded-2xl p-8 sm:p-12 text-center">
-        <h2 class="font-display text-2xl font-bold text-gold mb-8">ライブラリ統計</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
-          <div>
-            <div class="text-4xl font-bold text-white mb-2">{totalFiles}</div>
-            <div class="text-cream/60 text-sm">PDFファイル</div>
-          </div>
-          <div>
-            <div class="text-4xl font-bold text-white mb-2">{totalCalibers}</div>
-            <div class="text-cream/60 text-sm">キャリバー</div>
-          </div>
-          <div>
-            <div class="text-4xl font-bold text-white mb-2">{categoryStats.Quartz || 0}</div>
-            <div class="text-cream/60 text-sm">クォーツ系</div>
-          </div>
-          <div>
-            <div class="text-4xl font-bold text-white mb-2">{categoryStats.Digital || 0}</div>
-            <div class="text-cream/60 text-sm">デジタル系</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
