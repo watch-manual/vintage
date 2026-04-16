@@ -2,8 +2,8 @@
   "totalFiles": 615,
   "totalCalibers": 716,
   "categoryStats": {
-    "Quartz": 283,
-    "Other": 279,
+    "Quartz": 543,
+    "Mechanical": 19,
     "Digital": 53
   },
   "files": [
@@ -235,7 +235,7 @@
         "14A-1"
       ],
       "title": "14A-1 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -245,7 +245,7 @@
         "14A-2"
       ],
       "title": "14A-2 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -255,7 +255,7 @@
         "14B"
       ],
       "title": "14B 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -265,7 +265,7 @@
         "14C"
       ],
       "title": "14C 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -275,7 +275,7 @@
         "16A"
       ],
       "title": "16A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -327,7 +327,7 @@
         "1F20A"
       ],
       "title": "1F20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -582,7 +582,7 @@
         "2Aシリーズ"
       ],
       "title": "2Aシリーズ 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": true
     },
@@ -592,7 +592,7 @@
         "2B20A"
       ],
       "title": "2B20A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -603,7 +603,7 @@
         "2B1"
       ],
       "title": "2B21A, 2B1 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -614,7 +614,7 @@
         "2B2"
       ],
       "title": "2B21A, 2B2 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -624,7 +624,7 @@
         "2B31A"
       ],
       "title": "2B31A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -635,7 +635,7 @@
         "2C21A"
       ],
       "title": "2C20A, 2C21A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -667,7 +667,7 @@
         "2E20A"
       ],
       "title": "2E20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -677,7 +677,7 @@
         "2E20B"
       ],
       "title": "2E20B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -687,7 +687,7 @@
         "2E50A"
       ],
       "title": "2E50A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -697,7 +697,7 @@
         "2F50A"
       ],
       "title": "2F50A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -708,7 +708,7 @@
         "2G38A"
       ],
       "title": "2G28A, 2G38A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -718,7 +718,7 @@
         "2K00A"
       ],
       "title": "2K00A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -728,7 +728,7 @@
         "2K01A"
       ],
       "title": "2K01A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -739,7 +739,7 @@
         "2K03A"
       ],
       "title": "2K02A, 2K03A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -749,7 +749,7 @@
         "2N20A"
       ],
       "title": "2N20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -759,7 +759,7 @@
         "2P20A"
       ],
       "title": "2P20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -769,7 +769,7 @@
         "2P21A"
       ],
       "title": "2P21A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -779,7 +779,7 @@
         "2Y00A"
       ],
       "title": "2Y00A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -789,7 +789,7 @@
         "2Y01A"
       ],
       "title": "2Y01A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -872,7 +872,7 @@
         "3E22A3E23A3E29A3E32A3E39A"
       ],
       "title": "3E22A3E23A3E29A3E32A3E39A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -886,7 +886,7 @@
         "3E39A"
       ],
       "title": "3E22A, 3E23A, 3E29A, 3E32A, 3E39A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -896,7 +896,7 @@
         "3L12A3L14A3L19A"
       ],
       "title": "3L12A3L14A3L19A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -908,7 +908,7 @@
         "3L19A"
       ],
       "title": "3L12A, 3L14A, 3L19A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -919,7 +919,7 @@
         "22ASUPPLEMENT"
       ],
       "title": "3M21, 22ASUPPLEMENT 補足説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": true,
       "isSeries": false
     },
@@ -929,7 +929,7 @@
         "3M22A"
       ],
       "title": "3M22A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -939,7 +939,7 @@
         "3M62A"
       ],
       "title": "3M62A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -951,7 +951,7 @@
         "3Y09A"
       ],
       "title": "3Y02A, 3Y03A, 3Y09A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -992,7 +992,7 @@
         "41A"
       ],
       "title": "41A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1062,7 +1062,7 @@
         "43A"
       ],
       "title": "43A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1073,7 +1073,7 @@
         "4303A"
       ],
       "title": "43A, 4303A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1093,7 +1093,7 @@
         "47A"
       ],
       "title": "47A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1126,7 +1126,7 @@
         "4F35A"
       ],
       "title": "4F32A, 8F32A, 4F33A, 4F35A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1137,7 +1137,7 @@
         "8F56A"
       ],
       "title": "4F56A, 8F56A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1147,7 +1147,7 @@
         "4F8FBATTERYREPLACE"
       ],
       "title": "4F8FBATTERYREPLACE 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1157,7 +1157,7 @@
         "4K22A"
       ],
       "title": "4K22A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1167,7 +1167,7 @@
         "4K24A"
       ],
       "title": "4K24A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1178,7 +1178,7 @@
         "4K26A"
       ],
       "title": "4K25A, 4K26A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1210,7 +1210,7 @@
         "4N01B"
       ],
       "title": "4N00B, 4N20B, 4N01B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1220,7 +1220,7 @@
         "4N01B4N20B4N01B"
       ],
       "title": "4N01B4N20B4N01B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1320,7 +1320,7 @@
         "5A50A"
       ],
       "title": "5A50A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1331,7 +1331,7 @@
         "5C23A"
       ],
       "title": "5C20A, 5C23A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1362,7 +1362,7 @@
         "5E20A"
       ],
       "title": "5E20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1372,7 +1372,7 @@
         "5E29A"
       ],
       "title": "5E29A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1382,7 +1382,7 @@
         "5G23A"
       ],
       "title": "5G23A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1393,7 +1393,7 @@
         "5H23A"
       ],
       "title": "5H22A, 5H23A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1403,7 +1403,7 @@
         "5J22A"
       ],
       "title": "5J22A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1413,7 +1413,7 @@
         "5J32A"
       ],
       "title": "5J32A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1423,7 +1423,7 @@
         "5K25A"
       ],
       "title": "5K25A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1434,7 +1434,7 @@
         "5L15A"
       ],
       "title": "5L14A, 5L15A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1499,7 +1499,7 @@
         "5P29A"
       ],
       "title": "5P22A, 5P23A, 5P29A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1512,7 +1512,7 @@
         "39A-1"
       ],
       "title": "5P30A, 5P31A, 5P32A, 39A-1 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1525,7 +1525,7 @@
         "5P39A"
       ],
       "title": "5P30A, 5P31A, 5P32A, 5P39A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1535,7 +1535,7 @@
         "5S21A"
       ],
       "title": "5S21A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1546,7 +1546,7 @@
         "5T52B"
       ],
       "title": "5T32B, 5T52B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1556,7 +1556,7 @@
         "5T52A"
       ],
       "title": "5T52A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1568,7 +1568,7 @@
         "5Y13A"
       ],
       "title": "5Y01A, 5Y02A, 5Y13A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1579,7 +1579,7 @@
         "5Y02A"
       ],
       "title": "5Y01A, 5Y02A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1589,7 +1589,7 @@
         "5Y13A"
       ],
       "title": "5Y13A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1604,7 +1604,7 @@
         "5Y39A"
       ],
       "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1614,7 +1614,7 @@
         "5Y86A"
       ],
       "title": "5Y86A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1624,7 +1624,7 @@
         "5Y88A"
       ],
       "title": "5Y88A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1634,7 +1634,7 @@
         "5Y91A"
       ],
       "title": "5Y91A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1780,7 +1780,7 @@
         "65シリーズ"
       ],
       "title": "65シリーズ 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": true
     },
@@ -1831,7 +1831,7 @@
         "6A32A"
       ],
       "title": "6A32A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1842,7 +1842,7 @@
         "6F29A"
       ],
       "title": "6F22A, 6F29A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1852,7 +1852,7 @@
         "6F24A"
       ],
       "title": "6F24A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1863,7 +1863,7 @@
         "6F26A"
       ],
       "title": "6F25A, 6F26A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1873,7 +1873,7 @@
         "6G28A"
       ],
       "title": "6G28A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2223,7 +2223,7 @@
         "78A"
       ],
       "title": "78A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2253,7 +2253,7 @@
         "7A07A"
       ],
       "title": "7A07A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2263,7 +2263,7 @@
         "7A28A"
       ],
       "title": "7A28A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2273,7 +2273,7 @@
         "7A38"
       ],
       "title": "7A38 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2283,7 +2283,7 @@
         "7A38A"
       ],
       "title": "7A38A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2293,7 +2293,7 @@
         "7A48A"
       ],
       "title": "7A48A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2303,7 +2303,7 @@
         "7C17A"
       ],
       "title": "7C17A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2314,7 +2314,7 @@
         "7C46A"
       ],
       "title": "7C43A, 7C46A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2354,7 +2354,7 @@
         "7F18A"
       ],
       "title": "7F18A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2364,7 +2364,7 @@
         "7F22A7F24A7F26A7F27A"
       ],
       "title": "7F22A7F24A7F26A7F27A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2374,7 +2374,7 @@
         "7F32A"
       ],
       "title": "7F32A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2387,7 +2387,7 @@
         "7F69A"
       ],
       "title": "7F38A, 7F39A, 7F68A, 7F69A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2397,7 +2397,7 @@
         "7G21A"
       ],
       "title": "7G21A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2407,7 +2407,7 @@
         "7K52A"
       ],
       "title": "7K52A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2419,7 +2419,7 @@
         "7L2"
       ],
       "title": "7L22, 7L22A, 7L2 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2430,7 +2430,7 @@
         "7L22A"
       ],
       "title": "7L22, 7L22A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2461,7 +2461,7 @@
         "7N01A"
       ],
       "title": "7N00A, 7N01A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2473,7 +2473,7 @@
         "7N21C"
       ],
       "title": "7N00C, 7N01C, 7N21C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2483,7 +2483,7 @@
         "7N07A"
       ],
       "title": "7N07A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2494,7 +2494,7 @@
         "7N08C"
       ],
       "title": "7N07C, 7N08C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2508,7 +2508,7 @@
         "7N43A"
       ],
       "title": "7N22A, 7N29A, 7N33A, 7N42A, 7N43A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2519,7 +2519,7 @@
         "7N29C"
       ],
       "title": "7N22C, 7N29C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2531,7 +2531,7 @@
         "7N39C"
       ],
       "title": "7N32C, 7N33C, 7N39C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2542,7 +2542,7 @@
         "7N36C"
       ],
       "title": "7N35C, 7N36C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2553,7 +2553,7 @@
         "7N43C"
       ],
       "title": "7N42C, 7N43C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2565,7 +2565,7 @@
         "7N89A"
       ],
       "title": "7N82A, 7N83A, 7N89A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2578,7 +2578,7 @@
         "7N89C"
       ],
       "title": "7N82C, 7N83C, 7N85C, 7N89C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2830,7 +2830,7 @@
         "8A21A"
       ],
       "title": "8A20A, 8A21A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2841,7 +2841,7 @@
         "8C23A"
       ],
       "title": "8C22A, 8C23A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2852,7 +2852,7 @@
         "8M18A"
       ],
       "title": "8M15A, 8M18A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2863,7 +2863,7 @@
         "8M25B"
       ],
       "title": "8M25A, 8M25B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2874,7 +2874,7 @@
         "8M32A"
       ],
       "title": "8M26A, 8M32A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2884,7 +2884,7 @@
         "8M35A"
       ],
       "title": "8M35A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2894,7 +2894,7 @@
         "8M37A"
       ],
       "title": "8M37A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2904,7 +2904,7 @@
         "8N20A"
       ],
       "title": "8N20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2915,7 +2915,7 @@
         "8S23A"
       ],
       "title": "8S21A, 8S23A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2925,7 +2925,7 @@
         "8V20A"
       ],
       "title": "8V20A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2935,7 +2935,7 @@
         "8V22A"
       ],
       "title": "8V22A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2945,7 +2945,7 @@
         "8V36A"
       ],
       "title": "8V36A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2955,7 +2955,7 @@
         "8Y21A"
       ],
       "title": "8Y21A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2985,7 +2985,7 @@
         "93A"
       ],
       "title": "93A 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3087,7 +3087,7 @@
         "97シリーズ"
       ],
       "title": "97シリーズ 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": true
     },
@@ -3107,7 +3107,7 @@
         "9T82A"
       ],
       "title": "9T82A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3117,7 +3117,7 @@
         "A029A"
       ],
       "title": "A029A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3127,7 +3127,7 @@
         "A031A"
       ],
       "title": "A031A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3137,7 +3137,7 @@
         "A039A"
       ],
       "title": "A039A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3147,7 +3147,7 @@
         "A127A"
       ],
       "title": "A127A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3157,7 +3157,7 @@
         "A128A"
       ],
       "title": "A128A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3167,7 +3167,7 @@
         "A133A"
       ],
       "title": "A133A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3177,7 +3177,7 @@
         "A134A"
       ],
       "title": "A134A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3187,7 +3187,7 @@
         "A135A"
       ],
       "title": "A135A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3197,7 +3197,7 @@
         "A156A"
       ],
       "title": "A156A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3207,7 +3207,7 @@
         "A158A"
       ],
       "title": "A158A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3217,7 +3217,7 @@
         "A159A"
       ],
       "title": "A159A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3227,7 +3227,7 @@
         "A159B"
       ],
       "title": "A159B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3237,7 +3237,7 @@
         "A169A"
       ],
       "title": "A169A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3247,7 +3247,7 @@
         "A229A"
       ],
       "title": "A229A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3257,7 +3257,7 @@
         "A239A"
       ],
       "title": "A239A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3267,7 +3267,7 @@
         "A257A"
       ],
       "title": "A257A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3277,7 +3277,7 @@
         "A258A"
       ],
       "title": "A258A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3287,7 +3287,7 @@
         "A259A"
       ],
       "title": "A259A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3297,7 +3297,7 @@
         "A354A"
       ],
       "title": "A354A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3307,7 +3307,7 @@
         "A358A"
       ],
       "title": "A358A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3317,7 +3317,7 @@
         "A359A"
       ],
       "title": "A359A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3327,7 +3327,7 @@
         "A439A"
       ],
       "title": "A439A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3337,7 +3337,7 @@
         "A547A"
       ],
       "title": "A547A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3347,7 +3347,7 @@
         "A557A"
       ],
       "title": "A557A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3357,7 +3357,7 @@
         "A628A"
       ],
       "title": "A628A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3367,7 +3367,7 @@
         "A638A"
       ],
       "title": "A638A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3378,7 +3378,7 @@
         "A639"
       ],
       "title": "A638A, A639 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3388,7 +3388,7 @@
         "A639A"
       ],
       "title": "A639A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3399,7 +3399,7 @@
         "A718A"
       ],
       "title": "A708A, A718A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3409,7 +3409,7 @@
         "A714A"
       ],
       "title": "A714A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3419,7 +3419,7 @@
         "A721A"
       ],
       "title": "A721A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3429,7 +3429,7 @@
         "A781A"
       ],
       "title": "A781A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3491,7 +3491,7 @@
         "A904A"
       ],
       "title": "A904A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3501,7 +3501,7 @@
         "A914A"
       ],
       "title": "A914A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3511,7 +3511,7 @@
         "A927A"
       ],
       "title": "A927A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3522,7 +3522,7 @@
         "A939A"
       ],
       "title": "A927, A939A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3532,7 +3532,7 @@
         "A939A"
       ],
       "title": "A939A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3542,7 +3542,7 @@
         "A944A"
       ],
       "title": "A944A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3553,7 +3553,7 @@
         "A966A"
       ],
       "title": "A965A, A966A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3563,7 +3563,7 @@
         "B004A"
       ],
       "title": "B004A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3573,7 +3573,7 @@
         "B122A"
       ],
       "title": "B122A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3583,7 +3583,7 @@
         "B200A"
       ],
       "title": "B200A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3593,7 +3593,7 @@
         "B337A"
       ],
       "title": "B337A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3603,7 +3603,7 @@
         "C153A"
       ],
       "title": "C153A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3613,7 +3613,7 @@
         "C359A"
       ],
       "title": "C359A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3623,7 +3623,7 @@
         "C439A"
       ],
       "title": "C439A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3633,7 +3633,7 @@
         "C515A"
       ],
       "title": "C515A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3693,7 +3693,7 @@
         "DH33A"
       ],
       "title": "DH33A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3703,7 +3703,7 @@
         "E029A"
       ],
       "title": "E029A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3713,7 +3713,7 @@
         "F023A"
       ],
       "title": "F023A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3723,7 +3723,7 @@
         "F033A"
       ],
       "title": "F033A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3733,7 +3733,7 @@
         "F039A"
       ],
       "title": "F039A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3743,7 +3743,7 @@
         "F051A"
       ],
       "title": "F051A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3753,7 +3753,7 @@
         "F221A"
       ],
       "title": "F221A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3763,7 +3763,7 @@
         "F231A"
       ],
       "title": "F231A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3773,7 +3773,7 @@
         "F421A"
       ],
       "title": "F421A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3783,7 +3783,7 @@
         "G139A"
       ],
       "title": "G139A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3793,7 +3793,7 @@
         "G757A"
       ],
       "title": "G757A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3803,7 +3803,7 @@
         "H021A"
       ],
       "title": "H021A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3815,7 +3815,7 @@
         "H023A"
       ],
       "title": "H021B, H022A, H023A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3825,7 +3825,7 @@
         "H127A"
       ],
       "title": "H127A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3835,7 +3835,7 @@
         "H239A"
       ],
       "title": "H239A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3845,7 +3845,7 @@
         "H249A"
       ],
       "title": "H249A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3855,7 +3855,7 @@
         "H357A"
       ],
       "title": "H357A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3865,7 +3865,7 @@
         "H448A"
       ],
       "title": "H448A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3875,7 +3875,7 @@
         "H449A"
       ],
       "title": "H449A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3885,7 +3885,7 @@
         "H461A"
       ],
       "title": "H461A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3895,7 +3895,7 @@
         "H556A"
       ],
       "title": "H556A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3906,7 +3906,7 @@
         "H557A"
       ],
       "title": "H556A, H557A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3916,7 +3916,7 @@
         "H557A"
       ],
       "title": "H557A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3926,7 +3926,7 @@
         "H558A"
       ],
       "title": "H558A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3936,7 +3936,7 @@
         "H801A"
       ],
       "title": "H801A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3946,7 +3946,7 @@
         "L012A"
       ],
       "title": "L012A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3956,7 +3956,7 @@
         "L221A"
       ],
       "title": "L221A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3966,7 +3966,7 @@
         "L423A"
       ],
       "title": "L423A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3976,7 +3976,7 @@
         "L823A"
       ],
       "title": "L823A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3986,7 +3986,7 @@
         "M154A"
       ],
       "title": "M154A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3996,7 +3996,7 @@
         "M158A"
       ],
       "title": "M158A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4006,7 +4006,7 @@
         "M159A"
       ],
       "title": "M159A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4016,7 +4016,7 @@
         "M354A"
       ],
       "title": "M354A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4026,7 +4026,7 @@
         "M421A"
       ],
       "title": "M421A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4036,7 +4036,7 @@
         "M422A"
       ],
       "title": "M422A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4046,7 +4046,7 @@
         "M516A"
       ],
       "title": "M516A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4056,7 +4056,7 @@
         "M705A"
       ],
       "title": "M705A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4066,7 +4066,7 @@
         "M726A"
       ],
       "title": "M726A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4077,7 +4077,7 @@
         "M796A"
       ],
       "title": "M795A, M796A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4087,7 +4087,7 @@
         "M929A"
       ],
       "title": "M929A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4098,7 +4098,7 @@
         "N945A"
       ],
       "title": "N944A, N945A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4108,7 +4108,7 @@
         "N94JA"
       ],
       "title": "N94JA 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4401,7 +4401,7 @@
         "SP11"
       ],
       "title": "SP11 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4413,7 +4413,7 @@
         "INSTRUCTIONS"
       ],
       "title": "SEIKO, A825, INSTRUCTIONS 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4423,7 +4423,7 @@
         "UW01A"
       ],
       "title": "UW01A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4433,7 +4433,7 @@
         "V001A"
       ],
       "title": "V001A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4443,7 +4443,7 @@
         "V011A"
       ],
       "title": "V011A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4453,7 +4453,7 @@
         "V031A"
       ],
       "title": "V031A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4463,7 +4463,7 @@
         "V041A"
       ],
       "title": "V041A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4473,7 +4473,7 @@
         "V051A"
       ],
       "title": "V051A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4493,7 +4493,7 @@
         "V145A"
       ],
       "title": "V145A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4503,7 +4503,7 @@
         "V14JA"
       ],
       "title": "V14JA 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4513,7 +4513,7 @@
         "V182A"
       ],
       "title": "V182A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4523,7 +4523,7 @@
         "V220A"
       ],
       "title": "V220A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4533,7 +4533,7 @@
         "V230A"
       ],
       "title": "V230A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4543,7 +4543,7 @@
         "V230B"
       ],
       "title": "V230B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4553,7 +4553,7 @@
         "V231A"
       ],
       "title": "V231A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4563,7 +4563,7 @@
         "V232A"
       ],
       "title": "V232A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4573,7 +4573,7 @@
         "V233A"
       ],
       "title": "V233A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4583,7 +4583,7 @@
         "V249A"
       ],
       "title": "V249A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4594,7 +4594,7 @@
         "V251A"
       ],
       "title": "V250A, V251A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4604,7 +4604,7 @@
         "V252A"
       ],
       "title": "V252A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4614,7 +4614,7 @@
         "V253A"
       ],
       "title": "V253A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4624,7 +4624,7 @@
         "V267A"
       ],
       "title": "V267A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4634,7 +4634,7 @@
         "V329A"
       ],
       "title": "V329A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4644,7 +4644,7 @@
         "V336A"
       ],
       "title": "V336A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4654,7 +4654,7 @@
         "V337A"
       ],
       "title": "V337A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4664,7 +4664,7 @@
         "V338A"
       ],
       "title": "V338A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4674,7 +4674,7 @@
         "V339A"
       ],
       "title": "V339A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4685,7 +4685,7 @@
         "V33GA"
       ],
       "title": "V33FA, V33GA 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4695,7 +4695,7 @@
         "V347A"
       ],
       "title": "V347A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4706,7 +4706,7 @@
         "V401A"
       ],
       "title": "V400A, V401A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4716,7 +4716,7 @@
         "V515B"
       ],
       "title": "V515B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4726,7 +4726,7 @@
         "V544A"
       ],
       "title": "V544A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4736,7 +4736,7 @@
         "V600A"
       ],
       "title": "V600A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4746,7 +4746,7 @@
         "V601A"
       ],
       "title": "V601A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4756,7 +4756,7 @@
         "V602A"
       ],
       "title": "V602A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4766,7 +4766,7 @@
         "V653B"
       ],
       "title": "V653B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4776,7 +4776,7 @@
         "V656A"
       ],
       "title": "V656A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4786,7 +4786,7 @@
         "V657A"
       ],
       "title": "V657A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4796,7 +4796,7 @@
         "V691A"
       ],
       "title": "V691A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4806,7 +4806,7 @@
         "V692A"
       ],
       "title": "V692A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4816,7 +4816,7 @@
         "V693A"
       ],
       "title": "V693A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4826,7 +4826,7 @@
         "V694A"
       ],
       "title": "V694A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4837,7 +4837,7 @@
         "V701A"
       ],
       "title": "V700A, V701A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4847,7 +4847,7 @@
         "V707A"
       ],
       "title": "V707A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4858,7 +4858,7 @@
         "V708C"
       ],
       "title": "V707C, V708C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4869,7 +4869,7 @@
         "V729A"
       ],
       "title": "V722A, V729A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4880,7 +4880,7 @@
         "V729C"
       ],
       "title": "V722C, V729C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4891,7 +4891,7 @@
         "V736A"
       ],
       "title": "V735A, V736A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4902,7 +4902,7 @@
         "V736C"
       ],
       "title": "V735C, V736C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4913,7 +4913,7 @@
         "V743A"
       ],
       "title": "V742A, V743A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4924,7 +4924,7 @@
         "V743C"
       ],
       "title": "V742C, V743C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4934,7 +4934,7 @@
         "V744C"
       ],
       "title": "V744C 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4944,7 +4944,7 @@
         "V785A"
       ],
       "title": "V785A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4954,7 +4954,7 @@
         "V800A"
       ],
       "title": "V800A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4964,7 +4964,7 @@
         "V802A"
       ],
       "title": "V802A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4974,7 +4974,7 @@
         "V803A"
       ],
       "title": "V803A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4984,7 +4984,7 @@
         "V827A"
       ],
       "title": "V827A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -4994,7 +4994,7 @@
         "V828A"
       ],
       "title": "V828A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5004,7 +5004,7 @@
         "V829A"
       ],
       "title": "V829A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5014,7 +5014,7 @@
         "V896A"
       ],
       "title": "V896A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5024,7 +5024,7 @@
         "V899A"
       ],
       "title": "V899A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5156,7 +5156,7 @@
         "WWW2A"
       ],
       "title": "WWW2A 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5657,7 +5657,7 @@
         "AL21"
       ],
       "title": "AL21 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5667,7 +5667,7 @@
         "AL33"
       ],
       "title": "AL33 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5677,7 +5677,7 @@
         "AL35"
       ],
       "title": "AL35 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5687,7 +5687,7 @@
         "NE15B"
       ],
       "title": "NE15B 取扱説明書",
-      "category": "Other",
+      "category": "Mechanical",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5697,7 +5697,7 @@
         "VB20B"
       ],
       "title": "VB20B 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5707,7 +5707,7 @@
         "VC00"
       ],
       "title": "VC00 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5717,7 +5717,7 @@
         "VC01E"
       ],
       "title": "VC01E 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5727,7 +5727,7 @@
         "VC10"
       ],
       "title": "VC10 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5737,7 +5737,7 @@
         "VC11E"
       ],
       "title": "VC11E 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -5977,7 +5977,7 @@
         "VKシリーズ"
       ],
       "title": "VKシリーズ 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": true
     },
@@ -6007,7 +6007,7 @@
         "VS3J"
       ],
       "title": "VS3J 取扱説明書",
-      "category": "Other",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -6739,7 +6739,7 @@
           "14A-1"
         ],
         "title": "14A-1 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6751,7 +6751,7 @@
           "14A-2"
         ],
         "title": "14A-2 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6763,7 +6763,7 @@
           "14B"
         ],
         "title": "14B 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6775,7 +6775,7 @@
           "14C"
         ],
         "title": "14C 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6787,7 +6787,7 @@
           "16A"
         ],
         "title": "16A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6873,7 +6873,7 @@
           "1F20A"
         ],
         "title": "1F20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7245,7 +7245,7 @@
           "2Aシリーズ"
         ],
         "title": "2Aシリーズ 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": true
       }
@@ -7257,7 +7257,7 @@
           "2B20A"
         ],
         "title": "2B20A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7270,7 +7270,7 @@
           "2B1"
         ],
         "title": "2B21A, 2B1 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       },
@@ -7281,7 +7281,7 @@
           "2B2"
         ],
         "title": "2B21A, 2B2 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7294,7 +7294,7 @@
           "2B1"
         ],
         "title": "2B21A, 2B1 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7307,7 +7307,7 @@
           "2B2"
         ],
         "title": "2B21A, 2B2 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7319,7 +7319,7 @@
           "2B31A"
         ],
         "title": "2B31A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7332,7 +7332,7 @@
           "2C21A"
         ],
         "title": "2C20A, 2C21A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7345,7 +7345,7 @@
           "2C21A"
         ],
         "title": "2C20A, 2C21A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7407,7 +7407,7 @@
           "2E20A"
         ],
         "title": "2E20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7419,7 +7419,7 @@
           "2E20B"
         ],
         "title": "2E20B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7431,7 +7431,7 @@
           "2E50A"
         ],
         "title": "2E50A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7443,7 +7443,7 @@
           "2F50A"
         ],
         "title": "2F50A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7456,7 +7456,7 @@
           "2G38A"
         ],
         "title": "2G28A, 2G38A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7469,7 +7469,7 @@
           "2G38A"
         ],
         "title": "2G28A, 2G38A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7481,7 +7481,7 @@
           "2K00A"
         ],
         "title": "2K00A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7493,7 +7493,7 @@
           "2K01A"
         ],
         "title": "2K01A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7506,7 +7506,7 @@
           "2K03A"
         ],
         "title": "2K02A, 2K03A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7519,7 +7519,7 @@
           "2K03A"
         ],
         "title": "2K02A, 2K03A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7531,7 +7531,7 @@
           "2N20A"
         ],
         "title": "2N20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7543,7 +7543,7 @@
           "2P20A"
         ],
         "title": "2P20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7555,7 +7555,7 @@
           "2P21A"
         ],
         "title": "2P21A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7567,7 +7567,7 @@
           "2Y00A"
         ],
         "title": "2Y00A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7579,7 +7579,7 @@
           "2Y01A"
         ],
         "title": "2Y01A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7709,7 +7709,7 @@
           "3E22A3E23A3E29A3E32A3E39A"
         ],
         "title": "3E22A3E23A3E29A3E32A3E39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7725,7 +7725,7 @@
           "3E39A"
         ],
         "title": "3E22A, 3E23A, 3E29A, 3E32A, 3E39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7741,7 +7741,7 @@
           "3E39A"
         ],
         "title": "3E22A, 3E23A, 3E29A, 3E32A, 3E39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7757,7 +7757,7 @@
           "3E39A"
         ],
         "title": "3E22A, 3E23A, 3E29A, 3E32A, 3E39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7773,7 +7773,7 @@
           "3E39A"
         ],
         "title": "3E22A, 3E23A, 3E29A, 3E32A, 3E39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7789,7 +7789,7 @@
           "3E39A"
         ],
         "title": "3E22A, 3E23A, 3E29A, 3E32A, 3E39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7801,7 +7801,7 @@
           "3L12A3L14A3L19A"
         ],
         "title": "3L12A3L14A3L19A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7815,7 +7815,7 @@
           "3L19A"
         ],
         "title": "3L12A, 3L14A, 3L19A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7829,7 +7829,7 @@
           "3L19A"
         ],
         "title": "3L12A, 3L14A, 3L19A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7843,7 +7843,7 @@
           "3L19A"
         ],
         "title": "3L12A, 3L14A, 3L19A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7856,7 +7856,7 @@
           "22ASUPPLEMENT"
         ],
         "title": "3M21, 22ASUPPLEMENT 補足説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": true,
         "isSeries": false
       }
@@ -7869,7 +7869,7 @@
           "22ASUPPLEMENT"
         ],
         "title": "3M21, 22ASUPPLEMENT 補足説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": true,
         "isSeries": false
       }
@@ -7881,7 +7881,7 @@
           "3M22A"
         ],
         "title": "3M22A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7893,7 +7893,7 @@
           "3M62A"
         ],
         "title": "3M62A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7907,7 +7907,7 @@
           "3Y09A"
         ],
         "title": "3Y02A, 3Y03A, 3Y09A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7921,7 +7921,7 @@
           "3Y09A"
         ],
         "title": "3Y02A, 3Y03A, 3Y09A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7935,7 +7935,7 @@
           "3Y09A"
         ],
         "title": "3Y02A, 3Y03A, 3Y09A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7995,7 +7995,7 @@
           "41A"
         ],
         "title": "41A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8030,7 +8030,7 @@
           "4303A"
         ],
         "title": "43A, 4303A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8090,7 +8090,7 @@
           "43A"
         ],
         "title": "43A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       },
@@ -8101,7 +8101,7 @@
           "4303A"
         ],
         "title": "43A, 4303A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8125,7 +8125,7 @@
           "47A"
         ],
         "title": "47A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8164,7 +8164,7 @@
           "4F35A"
         ],
         "title": "4F32A, 8F32A, 4F33A, 4F35A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8179,7 +8179,7 @@
           "4F35A"
         ],
         "title": "4F32A, 8F32A, 4F33A, 4F35A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8194,7 +8194,7 @@
           "4F35A"
         ],
         "title": "4F32A, 8F32A, 4F33A, 4F35A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8209,7 +8209,7 @@
           "4F35A"
         ],
         "title": "4F32A, 8F32A, 4F33A, 4F35A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8222,7 +8222,7 @@
           "8F56A"
         ],
         "title": "4F56A, 8F56A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8235,7 +8235,7 @@
           "8F56A"
         ],
         "title": "4F56A, 8F56A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8247,7 +8247,7 @@
           "4F8FBATTERYREPLACE"
         ],
         "title": "4F8FBATTERYREPLACE 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8259,7 +8259,7 @@
           "4K22A"
         ],
         "title": "4K22A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8271,7 +8271,7 @@
           "4K24A"
         ],
         "title": "4K24A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8284,7 +8284,7 @@
           "4K26A"
         ],
         "title": "4K25A, 4K26A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8297,7 +8297,7 @@
           "4K26A"
         ],
         "title": "4K25A, 4K26A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8335,7 +8335,7 @@
           "4N01B"
         ],
         "title": "4N00B, 4N20B, 4N01B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8349,7 +8349,7 @@
           "4N01B"
         ],
         "title": "4N00B, 4N20B, 4N01B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8363,7 +8363,7 @@
           "4N01B"
         ],
         "title": "4N00B, 4N20B, 4N01B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8375,7 +8375,7 @@
           "4N01B4N20B4N01B"
         ],
         "title": "4N01B4N20B4N01B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8495,7 +8495,7 @@
           "5A50A"
         ],
         "title": "5A50A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8508,7 +8508,7 @@
           "5C23A"
         ],
         "title": "5C20A, 5C23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8521,7 +8521,7 @@
           "5C23A"
         ],
         "title": "5C20A, 5C23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8571,7 +8571,7 @@
           "5E20A"
         ],
         "title": "5E20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8583,7 +8583,7 @@
           "5E29A"
         ],
         "title": "5E29A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8595,7 +8595,7 @@
           "5G23A"
         ],
         "title": "5G23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8608,7 +8608,7 @@
           "5H23A"
         ],
         "title": "5H22A, 5H23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8621,7 +8621,7 @@
           "5H23A"
         ],
         "title": "5H22A, 5H23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8633,7 +8633,7 @@
           "5J22A"
         ],
         "title": "5J22A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8645,7 +8645,7 @@
           "5J32A"
         ],
         "title": "5J32A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8657,7 +8657,7 @@
           "5K25A"
         ],
         "title": "5K25A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8670,7 +8670,7 @@
           "5L15A"
         ],
         "title": "5L14A, 5L15A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8683,7 +8683,7 @@
           "5L15A"
         ],
         "title": "5L14A, 5L15A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8799,7 +8799,7 @@
           "5P29A"
         ],
         "title": "5P22A, 5P23A, 5P29A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8813,7 +8813,7 @@
           "5P29A"
         ],
         "title": "5P22A, 5P23A, 5P29A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8827,7 +8827,7 @@
           "5P29A"
         ],
         "title": "5P22A, 5P23A, 5P29A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8842,7 +8842,7 @@
           "39A-1"
         ],
         "title": "5P30A, 5P31A, 5P32A, 39A-1 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -8855,7 +8855,7 @@
           "5P39A"
         ],
         "title": "5P30A, 5P31A, 5P32A, 5P39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8870,7 +8870,7 @@
           "39A-1"
         ],
         "title": "5P30A, 5P31A, 5P32A, 39A-1 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -8883,7 +8883,7 @@
           "5P39A"
         ],
         "title": "5P30A, 5P31A, 5P32A, 5P39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8898,7 +8898,7 @@
           "39A-1"
         ],
         "title": "5P30A, 5P31A, 5P32A, 39A-1 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -8911,7 +8911,7 @@
           "5P39A"
         ],
         "title": "5P30A, 5P31A, 5P32A, 5P39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8926,7 +8926,7 @@
           "39A-1"
         ],
         "title": "5P30A, 5P31A, 5P32A, 39A-1 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8941,7 +8941,7 @@
           "5P39A"
         ],
         "title": "5P30A, 5P31A, 5P32A, 5P39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8953,7 +8953,7 @@
           "5S21A"
         ],
         "title": "5S21A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8966,7 +8966,7 @@
           "5T52B"
         ],
         "title": "5T32B, 5T52B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8979,7 +8979,7 @@
           "5T52B"
         ],
         "title": "5T32B, 5T52B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8991,7 +8991,7 @@
           "5T52A"
         ],
         "title": "5T52A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9005,7 +9005,7 @@
           "5Y13A"
         ],
         "title": "5Y01A, 5Y02A, 5Y13A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -9016,7 +9016,7 @@
           "5Y02A"
         ],
         "title": "5Y01A, 5Y02A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9030,7 +9030,7 @@
           "5Y13A"
         ],
         "title": "5Y01A, 5Y02A, 5Y13A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -9041,7 +9041,7 @@
           "5Y02A"
         ],
         "title": "5Y01A, 5Y02A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9055,7 +9055,7 @@
           "5Y13A"
         ],
         "title": "5Y01A, 5Y02A, 5Y13A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -9065,7 +9065,7 @@
           "5Y13A"
         ],
         "title": "5Y13A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9082,7 +9082,7 @@
           "5Y39A"
         ],
         "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9099,7 +9099,7 @@
           "5Y39A"
         ],
         "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9116,7 +9116,7 @@
           "5Y39A"
         ],
         "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9133,7 +9133,7 @@
           "5Y39A"
         ],
         "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9150,7 +9150,7 @@
           "5Y39A"
         ],
         "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9167,7 +9167,7 @@
           "5Y39A"
         ],
         "title": "5Y22A, 5Y23A, 5Y30A, 5Y31A, 5Y32A, 5Y39A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9179,7 +9179,7 @@
           "5Y86A"
         ],
         "title": "5Y86A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9191,7 +9191,7 @@
           "5Y88A"
         ],
         "title": "5Y88A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9203,7 +9203,7 @@
           "5Y91A"
         ],
         "title": "5Y91A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9356,7 +9356,7 @@
           "65シリーズ"
         ],
         "title": "65シリーズ 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": true
       }
@@ -9426,7 +9426,7 @@
           "6A32A"
         ],
         "title": "6A32A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9439,7 +9439,7 @@
           "6F29A"
         ],
         "title": "6F22A, 6F29A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9452,7 +9452,7 @@
           "6F29A"
         ],
         "title": "6F22A, 6F29A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9464,7 +9464,7 @@
           "6F24A"
         ],
         "title": "6F24A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9477,7 +9477,7 @@
           "6F26A"
         ],
         "title": "6F25A, 6F26A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9490,7 +9490,7 @@
           "6F26A"
         ],
         "title": "6F25A, 6F26A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9502,7 +9502,7 @@
           "6G28A"
         ],
         "title": "6G28A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10052,7 +10052,7 @@
           "78A"
         ],
         "title": "78A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10076,7 +10076,7 @@
           "7A07A"
         ],
         "title": "7A07A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10088,7 +10088,7 @@
           "7A28A"
         ],
         "title": "7A28A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10100,7 +10100,7 @@
           "7A38"
         ],
         "title": "7A38 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10112,7 +10112,7 @@
           "7A38A"
         ],
         "title": "7A38A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10124,7 +10124,7 @@
           "7A48A"
         ],
         "title": "7A48A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10136,7 +10136,7 @@
           "7C17A"
         ],
         "title": "7C17A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10149,7 +10149,7 @@
           "7C46A"
         ],
         "title": "7C43A, 7C46A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10162,7 +10162,7 @@
           "7C46A"
         ],
         "title": "7C43A, 7C46A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10210,7 +10210,7 @@
           "7F18A"
         ],
         "title": "7F18A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10222,7 +10222,7 @@
           "7F22A7F24A7F26A7F27A"
         ],
         "title": "7F22A7F24A7F26A7F27A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10234,7 +10234,7 @@
           "7F32A"
         ],
         "title": "7F32A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10249,7 +10249,7 @@
           "7F69A"
         ],
         "title": "7F38A, 7F39A, 7F68A, 7F69A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10264,7 +10264,7 @@
           "7F69A"
         ],
         "title": "7F38A, 7F39A, 7F68A, 7F69A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10279,7 +10279,7 @@
           "7F69A"
         ],
         "title": "7F38A, 7F39A, 7F68A, 7F69A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10294,7 +10294,7 @@
           "7F69A"
         ],
         "title": "7F38A, 7F39A, 7F68A, 7F69A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10306,7 +10306,7 @@
           "7G21A"
         ],
         "title": "7G21A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10318,7 +10318,7 @@
           "7K52A"
         ],
         "title": "7K52A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10332,7 +10332,7 @@
           "7L2"
         ],
         "title": "7L22, 7L22A, 7L2 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -10343,7 +10343,7 @@
           "7L22A"
         ],
         "title": "7L22, 7L22A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10357,7 +10357,7 @@
           "7L2"
         ],
         "title": "7L22, 7L22A, 7L2 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -10368,7 +10368,7 @@
           "7L22A"
         ],
         "title": "7L22, 7L22A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10382,7 +10382,7 @@
           "7L2"
         ],
         "title": "7L22, 7L22A, 7L2 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10419,7 +10419,7 @@
           "7N01A"
         ],
         "title": "7N00A, 7N01A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10432,7 +10432,7 @@
           "7N01A"
         ],
         "title": "7N00A, 7N01A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10446,7 +10446,7 @@
           "7N21C"
         ],
         "title": "7N00C, 7N01C, 7N21C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10460,7 +10460,7 @@
           "7N21C"
         ],
         "title": "7N00C, 7N01C, 7N21C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10474,7 +10474,7 @@
           "7N21C"
         ],
         "title": "7N00C, 7N01C, 7N21C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10486,7 +10486,7 @@
           "7N07A"
         ],
         "title": "7N07A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10499,7 +10499,7 @@
           "7N08C"
         ],
         "title": "7N07C, 7N08C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10512,7 +10512,7 @@
           "7N08C"
         ],
         "title": "7N07C, 7N08C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10528,7 +10528,7 @@
           "7N43A"
         ],
         "title": "7N22A, 7N29A, 7N33A, 7N42A, 7N43A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10544,7 +10544,7 @@
           "7N43A"
         ],
         "title": "7N22A, 7N29A, 7N33A, 7N42A, 7N43A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10560,7 +10560,7 @@
           "7N43A"
         ],
         "title": "7N22A, 7N29A, 7N33A, 7N42A, 7N43A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10576,7 +10576,7 @@
           "7N43A"
         ],
         "title": "7N22A, 7N29A, 7N33A, 7N42A, 7N43A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10592,7 +10592,7 @@
           "7N43A"
         ],
         "title": "7N22A, 7N29A, 7N33A, 7N42A, 7N43A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10605,7 +10605,7 @@
           "7N29C"
         ],
         "title": "7N22C, 7N29C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10618,7 +10618,7 @@
           "7N29C"
         ],
         "title": "7N22C, 7N29C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10632,7 +10632,7 @@
           "7N39C"
         ],
         "title": "7N32C, 7N33C, 7N39C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10646,7 +10646,7 @@
           "7N39C"
         ],
         "title": "7N32C, 7N33C, 7N39C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10660,7 +10660,7 @@
           "7N39C"
         ],
         "title": "7N32C, 7N33C, 7N39C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10673,7 +10673,7 @@
           "7N36C"
         ],
         "title": "7N35C, 7N36C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10686,7 +10686,7 @@
           "7N36C"
         ],
         "title": "7N35C, 7N36C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10699,7 +10699,7 @@
           "7N43C"
         ],
         "title": "7N42C, 7N43C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10712,7 +10712,7 @@
           "7N43C"
         ],
         "title": "7N42C, 7N43C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10726,7 +10726,7 @@
           "7N89A"
         ],
         "title": "7N82A, 7N83A, 7N89A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10740,7 +10740,7 @@
           "7N89A"
         ],
         "title": "7N82A, 7N83A, 7N89A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10754,7 +10754,7 @@
           "7N89A"
         ],
         "title": "7N82A, 7N83A, 7N89A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10769,7 +10769,7 @@
           "7N89C"
         ],
         "title": "7N82C, 7N83C, 7N85C, 7N89C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10784,7 +10784,7 @@
           "7N89C"
         ],
         "title": "7N82C, 7N83C, 7N85C, 7N89C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10799,7 +10799,7 @@
           "7N89C"
         ],
         "title": "7N82C, 7N83C, 7N85C, 7N89C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -10814,7 +10814,7 @@
           "7N89C"
         ],
         "title": "7N82C, 7N83C, 7N85C, 7N89C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11247,7 +11247,7 @@
           "8A21A"
         ],
         "title": "8A20A, 8A21A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11260,7 +11260,7 @@
           "8A21A"
         ],
         "title": "8A20A, 8A21A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11273,7 +11273,7 @@
           "8C23A"
         ],
         "title": "8C22A, 8C23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11286,7 +11286,7 @@
           "8C23A"
         ],
         "title": "8C22A, 8C23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11299,7 +11299,7 @@
           "8M18A"
         ],
         "title": "8M15A, 8M18A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11312,7 +11312,7 @@
           "8M18A"
         ],
         "title": "8M15A, 8M18A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11325,7 +11325,7 @@
           "8M25B"
         ],
         "title": "8M25A, 8M25B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11338,7 +11338,7 @@
           "8M25B"
         ],
         "title": "8M25A, 8M25B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11351,7 +11351,7 @@
           "8M32A"
         ],
         "title": "8M26A, 8M32A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11364,7 +11364,7 @@
           "8M32A"
         ],
         "title": "8M26A, 8M32A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11376,7 +11376,7 @@
           "8M35A"
         ],
         "title": "8M35A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11388,7 +11388,7 @@
           "8M37A"
         ],
         "title": "8M37A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11400,7 +11400,7 @@
           "8N20A"
         ],
         "title": "8N20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11413,7 +11413,7 @@
           "8S23A"
         ],
         "title": "8S21A, 8S23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11426,7 +11426,7 @@
           "8S23A"
         ],
         "title": "8S21A, 8S23A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11438,7 +11438,7 @@
           "8V20A"
         ],
         "title": "8V20A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11450,7 +11450,7 @@
           "8V22A"
         ],
         "title": "8V22A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11462,7 +11462,7 @@
           "8V36A"
         ],
         "title": "8V36A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11474,7 +11474,7 @@
           "8Y21A"
         ],
         "title": "8Y21A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11498,7 +11498,7 @@
           "93A"
         ],
         "title": "93A 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11640,7 +11640,7 @@
           "97シリーズ"
         ],
         "title": "97シリーズ 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": true
       }
@@ -11664,7 +11664,7 @@
           "9T82A"
         ],
         "title": "9T82A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11676,7 +11676,7 @@
           "A029A"
         ],
         "title": "A029A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11688,7 +11688,7 @@
           "A031A"
         ],
         "title": "A031A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11700,7 +11700,7 @@
           "A039A"
         ],
         "title": "A039A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11712,7 +11712,7 @@
           "A127A"
         ],
         "title": "A127A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11724,7 +11724,7 @@
           "A128A"
         ],
         "title": "A128A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11736,7 +11736,7 @@
           "A133A"
         ],
         "title": "A133A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11748,7 +11748,7 @@
           "A134A"
         ],
         "title": "A134A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11760,7 +11760,7 @@
           "A135A"
         ],
         "title": "A135A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11772,7 +11772,7 @@
           "A156A"
         ],
         "title": "A156A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11784,7 +11784,7 @@
           "A158A"
         ],
         "title": "A158A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11796,7 +11796,7 @@
           "A159A"
         ],
         "title": "A159A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11808,7 +11808,7 @@
           "A159B"
         ],
         "title": "A159B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11820,7 +11820,7 @@
           "A169A"
         ],
         "title": "A169A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11832,7 +11832,7 @@
           "A229A"
         ],
         "title": "A229A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11844,7 +11844,7 @@
           "A239A"
         ],
         "title": "A239A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11856,7 +11856,7 @@
           "A257A"
         ],
         "title": "A257A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11868,7 +11868,7 @@
           "A258A"
         ],
         "title": "A258A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11880,7 +11880,7 @@
           "A259A"
         ],
         "title": "A259A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11892,7 +11892,7 @@
           "A354A"
         ],
         "title": "A354A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11904,7 +11904,7 @@
           "A358A"
         ],
         "title": "A358A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11916,7 +11916,7 @@
           "A359A"
         ],
         "title": "A359A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11928,7 +11928,7 @@
           "A439A"
         ],
         "title": "A439A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11940,7 +11940,7 @@
           "A547A"
         ],
         "title": "A547A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11952,7 +11952,7 @@
           "A557A"
         ],
         "title": "A557A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11964,7 +11964,7 @@
           "A628A"
         ],
         "title": "A628A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11976,7 +11976,7 @@
           "A638A"
         ],
         "title": "A638A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -11987,7 +11987,7 @@
           "A639"
         ],
         "title": "A638A, A639 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12000,7 +12000,7 @@
           "A639"
         ],
         "title": "A638A, A639 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12012,7 +12012,7 @@
           "A639A"
         ],
         "title": "A639A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12025,7 +12025,7 @@
           "A718A"
         ],
         "title": "A708A, A718A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12038,7 +12038,7 @@
           "A718A"
         ],
         "title": "A708A, A718A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12050,7 +12050,7 @@
           "A714A"
         ],
         "title": "A714A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12062,7 +12062,7 @@
           "A721A"
         ],
         "title": "A721A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12074,7 +12074,7 @@
           "A781A"
         ],
         "title": "A781A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12174,7 +12174,7 @@
           "A904A"
         ],
         "title": "A904A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12186,7 +12186,7 @@
           "A914A"
         ],
         "title": "A914A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12198,7 +12198,7 @@
           "A927A"
         ],
         "title": "A927A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12211,7 +12211,7 @@
           "A939A"
         ],
         "title": "A927, A939A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12224,7 +12224,7 @@
           "A939A"
         ],
         "title": "A927, A939A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -12234,7 +12234,7 @@
           "A939A"
         ],
         "title": "A939A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12246,7 +12246,7 @@
           "A944A"
         ],
         "title": "A944A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12259,7 +12259,7 @@
           "A966A"
         ],
         "title": "A965A, A966A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12272,7 +12272,7 @@
           "A966A"
         ],
         "title": "A965A, A966A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12284,7 +12284,7 @@
           "B004A"
         ],
         "title": "B004A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12296,7 +12296,7 @@
           "B122A"
         ],
         "title": "B122A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12308,7 +12308,7 @@
           "B200A"
         ],
         "title": "B200A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12320,7 +12320,7 @@
           "B337A"
         ],
         "title": "B337A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12332,7 +12332,7 @@
           "C153A"
         ],
         "title": "C153A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12344,7 +12344,7 @@
           "C359A"
         ],
         "title": "C359A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12356,7 +12356,7 @@
           "C439A"
         ],
         "title": "C439A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12368,7 +12368,7 @@
           "C515A"
         ],
         "title": "C515A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12440,7 +12440,7 @@
           "DH33A"
         ],
         "title": "DH33A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12452,7 +12452,7 @@
           "E029A"
         ],
         "title": "E029A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12464,7 +12464,7 @@
           "F023A"
         ],
         "title": "F023A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12476,7 +12476,7 @@
           "F033A"
         ],
         "title": "F033A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12488,7 +12488,7 @@
           "F039A"
         ],
         "title": "F039A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12500,7 +12500,7 @@
           "F051A"
         ],
         "title": "F051A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12512,7 +12512,7 @@
           "F221A"
         ],
         "title": "F221A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12524,7 +12524,7 @@
           "F231A"
         ],
         "title": "F231A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12536,7 +12536,7 @@
           "F421A"
         ],
         "title": "F421A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12548,7 +12548,7 @@
           "G139A"
         ],
         "title": "G139A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12560,7 +12560,7 @@
           "G757A"
         ],
         "title": "G757A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12572,7 +12572,7 @@
           "H021A"
         ],
         "title": "H021A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12586,7 +12586,7 @@
           "H023A"
         ],
         "title": "H021B, H022A, H023A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12600,7 +12600,7 @@
           "H023A"
         ],
         "title": "H021B, H022A, H023A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12614,7 +12614,7 @@
           "H023A"
         ],
         "title": "H021B, H022A, H023A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12626,7 +12626,7 @@
           "H127A"
         ],
         "title": "H127A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12638,7 +12638,7 @@
           "H239A"
         ],
         "title": "H239A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12650,7 +12650,7 @@
           "H249A"
         ],
         "title": "H249A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12662,7 +12662,7 @@
           "H357A"
         ],
         "title": "H357A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12674,7 +12674,7 @@
           "H448A"
         ],
         "title": "H448A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12686,7 +12686,7 @@
           "H449A"
         ],
         "title": "H449A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12698,7 +12698,7 @@
           "H461A"
         ],
         "title": "H461A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12710,7 +12710,7 @@
           "H556A"
         ],
         "title": "H556A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -12721,7 +12721,7 @@
           "H557A"
         ],
         "title": "H556A, H557A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12734,7 +12734,7 @@
           "H557A"
         ],
         "title": "H556A, H557A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -12744,7 +12744,7 @@
           "H557A"
         ],
         "title": "H557A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12756,7 +12756,7 @@
           "H558A"
         ],
         "title": "H558A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12768,7 +12768,7 @@
           "H801A"
         ],
         "title": "H801A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12780,7 +12780,7 @@
           "L012A"
         ],
         "title": "L012A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12792,7 +12792,7 @@
           "L221A"
         ],
         "title": "L221A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12804,7 +12804,7 @@
           "L423A"
         ],
         "title": "L423A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12816,7 +12816,7 @@
           "L823A"
         ],
         "title": "L823A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12828,7 +12828,7 @@
           "M154A"
         ],
         "title": "M154A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12840,7 +12840,7 @@
           "M158A"
         ],
         "title": "M158A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12852,7 +12852,7 @@
           "M159A"
         ],
         "title": "M159A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12864,7 +12864,7 @@
           "M354A"
         ],
         "title": "M354A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12876,7 +12876,7 @@
           "M421A"
         ],
         "title": "M421A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12888,7 +12888,7 @@
           "M422A"
         ],
         "title": "M422A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12900,7 +12900,7 @@
           "M516A"
         ],
         "title": "M516A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12912,7 +12912,7 @@
           "M705A"
         ],
         "title": "M705A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12924,7 +12924,7 @@
           "M726A"
         ],
         "title": "M726A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12937,7 +12937,7 @@
           "M796A"
         ],
         "title": "M795A, M796A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12950,7 +12950,7 @@
           "M796A"
         ],
         "title": "M795A, M796A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12962,7 +12962,7 @@
           "M929A"
         ],
         "title": "M929A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12975,7 +12975,7 @@
           "N945A"
         ],
         "title": "N944A, N945A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -12988,7 +12988,7 @@
           "N945A"
         ],
         "title": "N944A, N945A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13000,7 +13000,7 @@
           "N94JA"
         ],
         "title": "N94JA 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13386,7 +13386,7 @@
           "SP11"
         ],
         "title": "SP11 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13400,7 +13400,7 @@
           "INSTRUCTIONS"
         ],
         "title": "SEIKO, A825, INSTRUCTIONS 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13414,7 +13414,7 @@
           "INSTRUCTIONS"
         ],
         "title": "SEIKO, A825, INSTRUCTIONS 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13428,7 +13428,7 @@
           "INSTRUCTIONS"
         ],
         "title": "SEIKO, A825, INSTRUCTIONS 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13440,7 +13440,7 @@
           "UW01A"
         ],
         "title": "UW01A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13452,7 +13452,7 @@
           "V001A"
         ],
         "title": "V001A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13464,7 +13464,7 @@
           "V011A"
         ],
         "title": "V011A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13476,7 +13476,7 @@
           "V031A"
         ],
         "title": "V031A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13488,7 +13488,7 @@
           "V041A"
         ],
         "title": "V041A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13500,7 +13500,7 @@
           "V051A"
         ],
         "title": "V051A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13524,7 +13524,7 @@
           "V145A"
         ],
         "title": "V145A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13536,7 +13536,7 @@
           "V14JA"
         ],
         "title": "V14JA 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13548,7 +13548,7 @@
           "V182A"
         ],
         "title": "V182A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13560,7 +13560,7 @@
           "V220A"
         ],
         "title": "V220A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13572,7 +13572,7 @@
           "V230A"
         ],
         "title": "V230A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13584,7 +13584,7 @@
           "V230B"
         ],
         "title": "V230B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13596,7 +13596,7 @@
           "V231A"
         ],
         "title": "V231A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13608,7 +13608,7 @@
           "V232A"
         ],
         "title": "V232A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13620,7 +13620,7 @@
           "V233A"
         ],
         "title": "V233A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13632,7 +13632,7 @@
           "V249A"
         ],
         "title": "V249A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13645,7 +13645,7 @@
           "V251A"
         ],
         "title": "V250A, V251A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13658,7 +13658,7 @@
           "V251A"
         ],
         "title": "V250A, V251A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13670,7 +13670,7 @@
           "V252A"
         ],
         "title": "V252A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13682,7 +13682,7 @@
           "V253A"
         ],
         "title": "V253A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13694,7 +13694,7 @@
           "V267A"
         ],
         "title": "V267A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13706,7 +13706,7 @@
           "V329A"
         ],
         "title": "V329A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13718,7 +13718,7 @@
           "V336A"
         ],
         "title": "V336A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13730,7 +13730,7 @@
           "V337A"
         ],
         "title": "V337A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13742,7 +13742,7 @@
           "V338A"
         ],
         "title": "V338A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13754,7 +13754,7 @@
           "V339A"
         ],
         "title": "V339A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13767,7 +13767,7 @@
           "V33GA"
         ],
         "title": "V33FA, V33GA 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13780,7 +13780,7 @@
           "V33GA"
         ],
         "title": "V33FA, V33GA 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13792,7 +13792,7 @@
           "V347A"
         ],
         "title": "V347A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13805,7 +13805,7 @@
           "V401A"
         ],
         "title": "V400A, V401A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13818,7 +13818,7 @@
           "V401A"
         ],
         "title": "V400A, V401A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13830,7 +13830,7 @@
           "V515B"
         ],
         "title": "V515B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13842,7 +13842,7 @@
           "V544A"
         ],
         "title": "V544A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13854,7 +13854,7 @@
           "V600A"
         ],
         "title": "V600A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13866,7 +13866,7 @@
           "V601A"
         ],
         "title": "V601A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13878,7 +13878,7 @@
           "V602A"
         ],
         "title": "V602A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13890,7 +13890,7 @@
           "V653B"
         ],
         "title": "V653B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13902,7 +13902,7 @@
           "V656A"
         ],
         "title": "V656A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13914,7 +13914,7 @@
           "V657A"
         ],
         "title": "V657A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13926,7 +13926,7 @@
           "V691A"
         ],
         "title": "V691A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13938,7 +13938,7 @@
           "V692A"
         ],
         "title": "V692A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13950,7 +13950,7 @@
           "V693A"
         ],
         "title": "V693A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13962,7 +13962,7 @@
           "V694A"
         ],
         "title": "V694A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13975,7 +13975,7 @@
           "V701A"
         ],
         "title": "V700A, V701A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -13988,7 +13988,7 @@
           "V701A"
         ],
         "title": "V700A, V701A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14000,7 +14000,7 @@
           "V707A"
         ],
         "title": "V707A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14013,7 +14013,7 @@
           "V708C"
         ],
         "title": "V707C, V708C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14026,7 +14026,7 @@
           "V708C"
         ],
         "title": "V707C, V708C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14039,7 +14039,7 @@
           "V729A"
         ],
         "title": "V722A, V729A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14052,7 +14052,7 @@
           "V729A"
         ],
         "title": "V722A, V729A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14065,7 +14065,7 @@
           "V729C"
         ],
         "title": "V722C, V729C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14078,7 +14078,7 @@
           "V729C"
         ],
         "title": "V722C, V729C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14091,7 +14091,7 @@
           "V736A"
         ],
         "title": "V735A, V736A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14104,7 +14104,7 @@
           "V736A"
         ],
         "title": "V735A, V736A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14117,7 +14117,7 @@
           "V736C"
         ],
         "title": "V735C, V736C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14130,7 +14130,7 @@
           "V736C"
         ],
         "title": "V735C, V736C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14143,7 +14143,7 @@
           "V743A"
         ],
         "title": "V742A, V743A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14156,7 +14156,7 @@
           "V743A"
         ],
         "title": "V742A, V743A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14169,7 +14169,7 @@
           "V743C"
         ],
         "title": "V742C, V743C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14182,7 +14182,7 @@
           "V743C"
         ],
         "title": "V742C, V743C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14194,7 +14194,7 @@
           "V744C"
         ],
         "title": "V744C 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14206,7 +14206,7 @@
           "V785A"
         ],
         "title": "V785A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14218,7 +14218,7 @@
           "V800A"
         ],
         "title": "V800A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14230,7 +14230,7 @@
           "V802A"
         ],
         "title": "V802A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14242,7 +14242,7 @@
           "V803A"
         ],
         "title": "V803A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14254,7 +14254,7 @@
           "V827A"
         ],
         "title": "V827A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14266,7 +14266,7 @@
           "V828A"
         ],
         "title": "V828A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14278,7 +14278,7 @@
           "V829A"
         ],
         "title": "V829A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14290,7 +14290,7 @@
           "V896A"
         ],
         "title": "V896A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14302,7 +14302,7 @@
           "V899A"
         ],
         "title": "V899A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -14486,7 +14486,7 @@
           "WWW2A"
         ],
         "title": "WWW2A 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15116,7 +15116,7 @@
           "AL21"
         ],
         "title": "AL21 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15128,7 +15128,7 @@
           "AL33"
         ],
         "title": "AL33 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15140,7 +15140,7 @@
           "AL35"
         ],
         "title": "AL35 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15152,7 +15152,7 @@
           "NE15B"
         ],
         "title": "NE15B 取扱説明書",
-        "category": "Other",
+        "category": "Mechanical",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15164,7 +15164,7 @@
           "VB20B"
         ],
         "title": "VB20B 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15176,7 +15176,7 @@
           "VC00"
         ],
         "title": "VC00 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15188,7 +15188,7 @@
           "VC01E"
         ],
         "title": "VC01E 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15200,7 +15200,7 @@
           "VC10"
         ],
         "title": "VC10 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15212,7 +15212,7 @@
           "VC11E"
         ],
         "title": "VC11E 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -15500,7 +15500,7 @@
           "VKシリーズ"
         ],
         "title": "VKシリーズ 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": true
       }
@@ -15536,7 +15536,7 @@
           "VS3J"
         ],
         "title": "VS3J 取扱説明書",
-        "category": "Other",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }

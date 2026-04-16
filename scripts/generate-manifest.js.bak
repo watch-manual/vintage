@@ -211,31 +211,14 @@ function inferCategory(filename) {
     return 'Quartz';
   }
   
-  // Mechanical系（明らかに機械式のもの）
-  if (/^(14[ABC]|16A|41A|43A|47A|78A|93A|NE15)/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^65[_-]?series/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^97[_-]?series/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^2B/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^2C20/i.test(upper)) {
-    return 'Mechanical';
-  }
-
   // シリーズ
   if (/series/i.test(upper)) {
     if (/[DM]\d*[_-]?series/i.test(upper)) return 'Digital';
     if (/[TVY]\d*[_-]?series/i.test(upper)) return 'Quartz';
-    return 'Quartz';
+    return 'Other';
   }
   
-  return 'Quartz';
+  return 'Other';
 }
 
 /**
