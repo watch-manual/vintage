@@ -239,7 +239,7 @@ const categoryLabels = {
       const page = await pdfDoc.getPage(pageNum);
       const viewport = page.getViewport({ scale });
       
-      const outputScale = window.devicePixelRatio || 1;
+      const outputScale = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = Math.floor(viewport.width * outputScale);
       canvas.height = Math.floor(viewport.height * outputScale);
       canvas.style.width = Math.floor(viewport.width) + 'px';
@@ -253,7 +253,7 @@ const categoryLabels = {
       updateButtons();
     }
     
-    pdfjsLib.getDocument({ url: pdfUrl, wasmUrl: '/pdfjs/wasm/' }).promise.then((pdf) => {
+    pdfjsLib.getDocument({ url: pdfUrl }).promise.then((pdf) => {
       pdfDoc = pdf;
       renderPage();
     }).catch((err) => {
