@@ -253,7 +253,7 @@ const categoryLabels = {
       updateButtons();
     }
     
-    pdfjsLib.getDocument(pdfUrl).promise.then((pdf) => {
+    pdfjsLib.getDocument({ url: pdfUrl, wasmUrl: '/pdfjs/wasm/' }).promise.then((pdf) => {
       pdfDoc = pdf;
       renderPage();
     }).catch((err) => {
