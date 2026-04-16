@@ -223,10 +223,11 @@ const categoryLabels = {
   <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}` }}>
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const isIPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const isIOSSafari = (isIOS || isIPadOS) && /Safari/.test(navigator.userAgent) && !/(CriOS|FxiOS|Chrome|Edg)/.test(navigator.userAgent);
+    const isDesktopSafari = !isIOS && !isIPadOS && /^((?!chrome|android|crios|edg).)*safari/i.test(navigator.userAgent);
     const container = document.querySelector('.bg-watch-black\\/5');
     
-    if (isIOS || isIPadOS || isSafari) {
+    if (isIOSSafari || isDesktopSafari) {
       // Safari系ブラウザではネイティブPDFビューワーにフォールバック
       if (container) {
         container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-4"><embed src="' + pdfUrl + '" type="application/pdf" class="w-full rounded-lg shadow-xl bg-white" style="min-height:70vh;height:80vh;border:none;"></embed><p class="mt-4 text-sm text-watch-black/60">PDFが表示されない場合は <a href="' + pdfUrl + '" class="text-gold-dark hover:underline" target="_blank">こちらから開く</a></p></div>';
