@@ -22,5 +22,10 @@
   "devDependencies": {
     "glob": "^11.0.0",
     "wrangler": "^4.83.0"
+  },
+  "overrides": {
+    "@astrojs/cloudflare": {
+      "wrangler": "^4.83.0"
+    }
   }
 }
