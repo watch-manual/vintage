@@ -17,6 +17,7 @@ export function getStaticPaths() {
 
 const { caliber, files } = Astro.props;
 const mainFile = files[0];
+const thumbnailUrl = mainFile?.filename ? `/thumbnails/${mainFile.filename.replace(/\.pdf$/i, '')}.webp` : '';
 
 // 関連キャリバーを取得
 const allCalibers = Object.keys(caliberData.caliberMap).filter(c => c !== caliber);
@@ -220,7 +221,7 @@ const categoryLabels = {
     </div>
   </noscript>
 
-  <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}` }}>
+  <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}`, thumbnailUrl }}>
     const isIOSPhone = /iPhone|iPod/.test(navigator.userAgent);
     const isIPad = /iPad/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     const isDesktopSafari = !isIOSPhone && !isIPad && /^((?!chrome|android|crios|edg).)*safari/i.test(navigator.userAgent);
@@ -228,35 +229,11 @@ const categoryLabels = {
     const toolbar = document.getElementById('pdf-toolbar');
 
     if (isIOSPhone) {
-      // iPhone では embed が機能不全なので、PDF.js で 1 ページ目だけレンダリングし、
-      // フル表示はネイティブビューワーへ誘導する
+      // iPhone では embed / PDF.js 描画が不安定なので、事前生成したサムネイル画像 + 直接開くリンクを表示
       if (toolbar) toolbar.style.display = 'none';
-      container.innerHTML = '<div class="flex flex-col items-center justify-center p-4"><canvas id="pdf-canvas" class="shadow-xl max-w-full h-auto bg-white"></canvas><div id="pdf-action" class="mt-4 text-center"></div></div>';
-      const canvas = document.getElementById('pdf-canvas');
-      const actionBox = document.getElementById('pdf-action');
-
-      import('/pdfjs/pdf.min.mjs').then((pdfjsLib) => {
-        // iPhone では worker 読み込みが不安定なことがあるため無効化（メインスレッドで処理）
-        pdfjsLib.GlobalWorkerOptions.workerSrc = '';
-        const ctx = canvas.getContext('2d');
-
-        return pdfjsLib.getDocument({ url: pdfUrl }).promise.then((pdf) => pdf.getPage(1)).then((page) => {
-          const scale = window.innerWidth < 768 ? 0.8 : 1.2;
-          const viewport = page.getViewport({ scale });
-          // iPhone では高解像度レンダリングで canvas が空白になるケースがあるため outputScale=1 でシンプルに描画
-          canvas.width = Math.floor(viewport.width);
-          canvas.height = Math.floor(viewport.height);
-          canvas.style.width = Math.floor(viewport.width) + 'px';
-          canvas.style.height = Math.floor(viewport.height) + 'px';
-
-          return page.render({ canvasContext: ctx, viewport }).promise;
-        }).then(() => {
-          actionBox.innerHTML = '<a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a><p class="mt-2 text-sm text-watch-black/60">SafariのPDFビューワーで全ページを閲覧できます</p>';
-        });
-      }).catch((err) => {
-        console.error('PDF preview error:', err);
-        container.innerHTML = '<div class="flex flex-col items-center justify-center p-8 text-center"><p class="text-watch-black/80 mb-4">PDFのプレビューを表示できません。</p><a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a></div>';
-      });
+      if (container) {
+        container.innerHTML = '<div class="flex flex-col items-center justify-center p-4"><img src="' + thumbnailUrl + '" alt="PDF 1ページ目" class="shadow-xl max-w-full h-auto bg-white rounded-lg"><div class="mt-4 text-center"><a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a><p class="mt-2 text-sm text-watch-black/60">SafariのPDFビューワーで全ページを閲覧できます</p></div></div>';
+      }
     } else if (isIPad || isDesktopSafari) {
       // iPad / デスクトップ Safari ではネイティブPDFビューワーにフォールバック
       if (toolbar) toolbar.style.display = 'none';
