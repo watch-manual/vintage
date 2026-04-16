@@ -2,8 +2,8 @@
   "totalFiles": 615,
   "totalCalibers": 716,
   "categoryStats": {
-    "Quartz": 596,
-    "Mechanical": 19
+    "Quartz": 614,
+    "Mechanical": 1
   },
   "files": [
     {
@@ -234,7 +234,7 @@
         "14A-1"
       ],
       "title": "14A-1 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -244,7 +244,7 @@
         "14A-2"
       ],
       "title": "14A-2 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -254,7 +254,7 @@
         "14B"
       ],
       "title": "14B 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -264,7 +264,7 @@
         "14C"
       ],
       "title": "14C 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -274,7 +274,7 @@
         "16A"
       ],
       "title": "16A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -591,7 +591,7 @@
         "2B20A"
       ],
       "title": "2B20A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -602,7 +602,7 @@
         "2B1"
       ],
       "title": "2B21A, 2B1 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -613,7 +613,7 @@
         "2B2"
       ],
       "title": "2B21A, 2B2 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -623,7 +623,7 @@
         "2B31A"
       ],
       "title": "2B31A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -634,7 +634,7 @@
         "2C21A"
       ],
       "title": "2C20A, 2C21A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -991,7 +991,7 @@
         "41A"
       ],
       "title": "41A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1061,7 +1061,7 @@
         "43A"
       ],
       "title": "43A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1072,7 +1072,7 @@
         "4303A"
       ],
       "title": "43A, 4303A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1092,7 +1092,7 @@
         "47A"
       ],
       "title": "47A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -1779,7 +1779,7 @@
         "65シリーズ"
       ],
       "title": "65シリーズ 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": true
     },
@@ -2222,7 +2222,7 @@
         "78A"
       ],
       "title": "78A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -2984,7 +2984,7 @@
         "93A"
       ],
       "title": "93A 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": false
     },
@@ -3086,7 +3086,7 @@
         "97シリーズ"
       ],
       "title": "97シリーズ 取扱説明書",
-      "category": "Mechanical",
+      "category": "Quartz",
       "isSupplement": false,
       "isSeries": true
     },
@@ -6738,7 +6738,7 @@
           "14A-1"
         ],
         "title": "14A-1 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6750,7 +6750,7 @@
           "14A-2"
         ],
         "title": "14A-2 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6762,7 +6762,7 @@
           "14B"
         ],
         "title": "14B 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6774,7 +6774,7 @@
           "14C"
         ],
         "title": "14C 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -6786,7 +6786,7 @@
           "16A"
         ],
         "title": "16A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7256,7 +7256,7 @@
           "2B20A"
         ],
         "title": "2B20A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7269,7 +7269,7 @@
           "2B1"
         ],
         "title": "2B21A, 2B1 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -7280,7 +7280,7 @@
           "2B2"
         ],
         "title": "2B21A, 2B2 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7293,7 +7293,7 @@
           "2B1"
         ],
         "title": "2B21A, 2B1 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7306,7 +7306,7 @@
           "2B2"
         ],
         "title": "2B21A, 2B2 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7318,7 +7318,7 @@
           "2B31A"
         ],
         "title": "2B31A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7331,7 +7331,7 @@
           "2C21A"
         ],
         "title": "2C20A, 2C21A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7344,7 +7344,7 @@
           "2C21A"
         ],
         "title": "2C20A, 2C21A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -7994,7 +7994,7 @@
           "41A"
         ],
         "title": "41A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8029,7 +8029,7 @@
           "4303A"
         ],
         "title": "43A, 4303A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8089,7 +8089,7 @@
           "43A"
         ],
         "title": "43A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       },
@@ -8100,7 +8100,7 @@
           "4303A"
         ],
         "title": "43A, 4303A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -8124,7 +8124,7 @@
           "47A"
         ],
         "title": "47A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -9355,7 +9355,7 @@
           "65シリーズ"
         ],
         "title": "65シリーズ 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": true
       }
@@ -10051,7 +10051,7 @@
           "78A"
         ],
         "title": "78A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11497,7 +11497,7 @@
           "93A"
         ],
         "title": "93A 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": false
       }
@@ -11639,7 +11639,7 @@
           "97シリーズ"
         ],
         "title": "97シリーズ 取扱説明書",
-        "category": "Mechanical",
+        "category": "Quartz",
         "isSupplement": false,
         "isSeries": true
       }

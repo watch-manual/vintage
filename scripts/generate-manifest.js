@@ -211,20 +211,8 @@ function inferCategory(filename) {
     return 'Quartz';
   }
   
-  // Mechanical系（明らかに機械式のもの）
-  if (/^(14[ABC]|16A|41A|43A|47A|78A|93A|NE15)/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^65[_-]?series/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^97[_-]?series/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^2B/i.test(upper)) {
-    return 'Mechanical';
-  }
-  if (/^2C20/i.test(upper)) {
+  // Mechanical系（NE15系のみ）
+  if (/^NE15/i.test(upper)) {
     return 'Mechanical';
   }
 
