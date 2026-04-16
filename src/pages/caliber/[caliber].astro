@@ -16,6 +16,7 @@ export function getStaticPaths() {
 }
 
 const { caliber, files } = Astro.props;
+const mainFile = files[0];
 
 // 関連キャリバーを取得
 const allCalibers = Object.keys(caliberData.caliberMap).filter(c => c !== caliber);
@@ -51,14 +52,14 @@ const categoryLabels = {
       <div class="mb-8">
         <div class="flex flex-wrap items-center gap-3 mb-4">
           <span class="inline-flex items-center px-3 py-1 bg-gold/10 text-gold-dark text-sm font-medium rounded-full">
-            {files[0]?.category ? (categoryLabels[files[0].category] || files[0].category) : 'その他'}
+            {mainFile?.category ? (categoryLabels[mainFile.category] || mainFile.category) : 'その他'}
           </span>
-          {files[0]?.isSupplement && (
+          {mainFile?.isSupplement && (
             <span class="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full">
               補足文書
             </span>
           )}
-          {files[0]?.isSeries && (
+          {mainFile?.isSeries && (
             <span class="inline-flex items-center px-3 py-1 bg-purple-50 text-purple-700 text-sm font-medium rounded-full">
               シリーズ
             </span>
@@ -70,30 +71,65 @@ const categoryLabels = {
             取扱説明書
           </span>
         </h1>
-        {files.length > 0 && files[0].calibers.length > 1 && (
+        {files.length > 0 && mainFile.calibers.length > 1 && (
           <p class="mt-4 text-watch-black/60">
             このPDFには以下のキャリバーも含まれています: 
-            {files[0].calibers.filter(c => c !== caliber).join(', ')}
+            {mainFile.calibers.filter(c => c !== caliber).join(', ')}
           </p>
         )}
       </div>
 
       <!-- PDF Viewer -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Main PDF Viewer -->
-        <div class="lg:col-span-2">
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-cream-dark">
-            <div class="p-4 bg-cream/50 border-b border-cream-dark flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+      <div class="mb-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-cream-dark">
+          <!-- Toolbar -->
+          <div class="p-3 bg-cream/50 border-b border-cream-dark flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <button id="prev-page" class="p-2 rounded-lg hover:bg-cream-dark text-watch-black disabled:opacity-40 transition-colors" aria-label="前のページ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                <span class="font-medium text-watch-black">{files[0]?.filename}</span>
-              </div>
+              </button>
+              <span class="text-sm text-watch-black font-medium min-w-[4rem] text-center">
+                <span id="page-num">1</span> / <span id="page-count">-</span>
+              </span>
+              <button id="next-page" class="p-2 rounded-lg hover:bg-cream-dark text-watch-black disabled:opacity-40 transition-colors" aria-label="次のページ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <button id="zoom-out" class="p-2 rounded-lg hover:bg-cream-dark text-watch-black transition-colors" aria-label="縮小">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <span id="zoom-level" class="text-sm text-watch-black w-14 text-center font-medium">150%</span>
+              <button id="zoom-in" class="p-2 rounded-lg hover:bg-cream-dark text-watch-black transition-colors" aria-label="拡大">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            
+            <div class="flex items-center gap-2">
               <a 
-                href={`/pdf/${files[0]?.filename}`}
+                href={`/pdf/${mainFile?.filename}#view=FitH`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-3 py-2 bg-white border border-cream-dark hover:border-gold hover:text-gold-dark text-watch-black text-sm font-medium rounded-lg transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                全画面
+              </a>
+              <a 
+                href={`/pdf/${mainFile?.filename}`}
                 download
-                class="inline-flex items-center gap-2 px-4 py-2 bg-gold hover:bg-gold-dark text-white text-sm font-medium rounded-lg transition-colors"
+                class="inline-flex items-center gap-1.5 px-3 py-2 bg-gold hover:bg-gold-dark text-white text-sm font-medium rounded-lg transition-colors"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -101,97 +137,164 @@ const categoryLabels = {
                 ダウンロード
               </a>
             </div>
-            <div class="aspect-[4/3] bg-watch-black/5">
-              <iframe 
-                src={`/pdf/${files[0]?.filename}`}
-                class="w-full h-full"
-                title={`${caliber} 取扱説明書`}
-              >
-                <p class="p-8 text-center text-watch-black/60">
-                  PDFを表示できません。
-                  <a href={`/pdf/${files[0]?.filename}`} class="text-gold-dark hover:underline" download>
-                    ダウンロード
-                  </a>
-                  してください。
-                </p>
-              </iframe>
-            </div>
+          </div>
+          
+          <!-- Canvas Area -->
+          <div class="bg-watch-black/5 min-h-[70vh] lg:min-h-[80vh] flex items-start justify-center p-4 overflow-auto">
+            <canvas id="pdf-canvas" class="shadow-xl max-w-full h-auto bg-white"></canvas>
           </div>
         </div>
+      </div>
 
-        <!-- Sidebar -->
-        <div class="space-y-6">
-          <!-- File Info -->
-          <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
-            <h2 class="font-display text-lg font-bold text-watch-black mb-4">ファイル情報</h2>
-            <dl class="space-y-3 text-sm">
-              <div>
-                <dt class="text-watch-black/60">ファイル名</dt>
-                <dd class="font-mono text-watch-black">{files[0]?.filename}</dd>
-              </div>
-              <div>
-                <dt class="text-watch-black/60">カテゴリ</dt>
-                <dd class="text-watch-black">{files[0]?.category ? (categoryLabels[files[0].category] || files[0].category) : 'その他'}</dd>
-              </div>
-              {files[0]?.calibers.length > 1 && (
-                <div>
-                  <dt class="text-watch-black/60">含まれるキャリバー</dt>
-                  <dd class="flex flex-wrap gap-1 mt-1">
-                    {files[0].calibers.map((c) => (
-                      <a 
-                        href={`/caliber/${c}/`}
-                        class={`inline-block px-2 py-1 rounded text-xs ${c === caliber ? 'bg-gold text-white' : 'bg-cream hover:bg-cream-dark text-watch-black'}`}
-                      >
-                        {c}
-                      </a>
-                    ))}
-                  </dd>
-                </div>
-              )}
-            </dl>
-          </div>
-
-          <!-- Related Calibers -->
-          {relatedCalibers.length > 0 && (
-            <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
-              <h2 class="font-display text-lg font-bold text-watch-black mb-4">関連キャリバー</h2>
-              <div class="flex flex-wrap gap-2">
-                {relatedCalibers.map((c) => (
-                  <a 
-                    href={`/caliber/${c}/`}
-                    class="inline-flex items-center px-3 py-1.5 bg-cream hover:bg-cream-dark text-watch-black text-sm rounded-lg transition-colors"
-                  >
-                    {c}
-                  </a>
-                ))}
-              </div>
+      <!-- Info Sections -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- File Info -->
+        <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
+          <h2 class="font-display text-lg font-bold text-watch-black mb-4">ファイル情報</h2>
+          <dl class="space-y-3 text-sm">
+            <div>
+              <dt class="text-watch-black/60">ファイル名</dt>
+              <dd class="font-mono text-watch-black break-all">{mainFile?.filename}</dd>
             </div>
-          )}
-
-          <!-- All Files List -->
-          {files.length > 1 && (
-            <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
-              <h2 class="font-display text-lg font-bold text-watch-black mb-4">関連ファイル</h2>
-              <ul class="space-y-2">
-                {files.map((file, idx) => (
-                  <li>
+            <div>
+              <dt class="text-watch-black/60">カテゴリ</dt>
+              <dd class="text-watch-black">{mainFile?.category ? (categoryLabels[mainFile.category] || mainFile.category) : 'その他'}</dd>
+            </div>
+            {mainFile?.calibers.length > 1 && (
+              <div>
+                <dt class="text-watch-black/60">含まれるキャリバー</dt>
+                <dd class="flex flex-wrap gap-1 mt-1">
+                  {mainFile.calibers.map((c) => (
                     <a 
-                      href={`/pdf/${file.filename}`}
-                      download
-                      class="flex items-center gap-2 text-sm text-watch-black hover:text-gold-dark transition-colors"
+                      href={`/caliber/${c}/`}
+                      class={`inline-block px-2 py-1 rounded text-xs ${c === caliber ? 'bg-gold text-white' : 'bg-cream hover:bg-cream-dark text-watch-black'}`}
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
-                      </svg>
-                      {file.filename}
+                      {c}
                     </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+                  ))}
+                </dd>
+              </div>
+            )}
+          </dl>
         </div>
+
+        <!-- Related Calibers -->
+        {relatedCalibers.length > 0 && (
+          <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
+            <h2 class="font-display text-lg font-bold text-watch-black mb-4">関連キャリバー</h2>
+            <div class="flex flex-wrap gap-2">
+              {relatedCalibers.map((c) => (
+                <a 
+                  href={`/caliber/${c}/`}
+                  class="inline-flex items-center px-3 py-1.5 bg-cream hover:bg-cream-dark text-watch-black text-sm rounded-lg transition-colors"
+                >
+                  {c}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- All Files List -->
+        {files.length > 1 && (
+          <div class="bg-white rounded-xl shadow-sm border border-cream-dark p-6">
+            <h2 class="font-display text-lg font-bold text-watch-black mb-4">関連ファイル</h2>
+            <ul class="space-y-2">
+              {files.map((file, idx) => (
+                <li>
+                  <a 
+                    href={`/pdf/${file.filename}`}
+                    download
+                    class="flex items-center gap-2 text-sm text-watch-black hover:text-gold-dark transition-colors"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="break-all">{file.filename}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   </div>
+
+  <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}` }}>
+    import * as pdfjsLib from '/pdfjs/pdf.min.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.min.mjs';
+    
+    let pdfDoc = null;
+    let pageNum = 1;
+    let scale = 1.5;
+    const canvas = document.getElementById('pdf-canvas');
+    const ctx = canvas.getContext('2d');
+    const pageNumEl = document.getElementById('page-num');
+    const pageCountEl = document.getElementById('page-count');
+    const zoomLevelEl = document.getElementById('zoom-level');
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const zoomOutBtn = document.getElementById('zoom-out');
+    const zoomInBtn = document.getElementById('zoom-in');
+    
+    function updateButtons() {
+      prevBtn.disabled = pageNum <= 1;
+      nextBtn.disabled = pdfDoc && pageNum >= pdfDoc.numPages;
+      zoomLevelEl.textContent = Math.round(scale * 100) + '%';
+    }
+    
+    async function renderPage() {
+      if (!pdfDoc) return;
+      const page = await pdfDoc.getPage(pageNum);
+      const viewport = page.getViewport({ scale });
+      
+      const outputScale = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(viewport.width * outputScale);
+      canvas.height = Math.floor(viewport.height * outputScale);
+      canvas.style.width = Math.floor(viewport.width) + 'px';
+      canvas.style.height = Math.floor(viewport.height) + 'px';
+      
+      const transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
+      await page.render({ canvasContext: ctx, viewport, transform }).promise;
+      
+      pageNumEl.textContent = pageNum;
+      pageCountEl.textContent = pdfDoc.numPages;
+      updateButtons();
+    }
+    
+    pdfjsLib.getDocument(pdfUrl).promise.then((pdf) => {
+      pdfDoc = pdf;
+      renderPage();
+    }).catch((err) => {
+      console.error('PDF load error:', err);
+      canvas.parentElement.innerHTML = '<p class="p-8 text-center text-watch-black/60">PDFを読み込めませんでした。<br><a href="' + pdfUrl + '" class="text-gold-dark hover:underline" download>ダウンロード</a>してください。</p>';
+    });
+    
+    prevBtn.addEventListener('click', () => {
+      if (pageNum > 1) {
+        pageNum--;
+        renderPage();
+      }
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      if (pdfDoc && pageNum < pdfDoc.numPages) {
+        pageNum++;
+        renderPage();
+      }
+    });
+    
+    zoomOutBtn.addEventListener('click', () => {
+      scale = Math.max(0.5, scale - 0.25);
+      renderPage();
+    });
+    
+    zoomInBtn.addEventListener('click', () => {
+      scale = Math.min(3.0, scale + 0.25);
+      renderPage();
+    });
+    
+    updateButtons();
+  </script>
 </Layout>
