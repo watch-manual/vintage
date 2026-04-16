@@ -221,15 +221,20 @@ const categoryLabels = {
   </noscript>
 
   <script type="module" is:inline define:vars={{ pdfUrl: `/pdf/${mainFile?.filename}` }}>
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isIPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-    const isAppleMobile = isIOS || isIPadOS;
-    const isDesktopSafari = !isIOS && !isIPadOS && /^((?!chrome|android|crios|edg).)*safari/i.test(navigator.userAgent);
+    const isIOSPhone = /iPhone|iPod/.test(navigator.userAgent);
+    const isIPad = /iPad/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const isDesktopSafari = !isIOSPhone && !isIPad && /^((?!chrome|android|crios|edg).)*safari/i.test(navigator.userAgent);
     const container = document.getElementById('pdf-container');
     const toolbar = document.getElementById('pdf-toolbar');
 
-    if (isAppleMobile || isDesktopSafari) {
-      // Safari / iOS Chrome などではネイティブPDFビューワーにフォールバック
+    if (isIOSPhone) {
+      // iPhone では埋め込み PDF のスワイプが動作しないため、直接開くリンクを表示
+      if (toolbar) toolbar.style.display = 'none';
+      if (container) {
+        container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-8 text-center"><p class="text-watch-black/80 mb-4">iPhoneでは埋め込み表示が制限されているため、以下のボタンでPDFを開いてください。</p><a href="' + pdfUrl + '" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors" target="_blank" rel="noopener noreferrer">PDFを開く</a><p class="mt-4 text-sm text-watch-black/60">SafariのPDFビューワーでスワイプしてページを移動できます。</p></div>';
+      }
+    } else if (isIPad || isDesktopSafari) {
+      // iPad / デスクトップ Safari ではネイティブPDFビューワーにフォールバック
       if (toolbar) toolbar.style.display = 'none';
       if (container) {
         container.innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center p-4"><embed src="' + pdfUrl + '" type="application/pdf" class="w-full rounded-lg shadow-xl bg-white" style="min-height:70vh;height:80vh;border:none;"></embed><p class="mt-4 text-sm text-watch-black/60 text-center">ネイティブのPDFビューワーで表示しています。<br>左右にスワイプするか、画面下部のコントロールでページを移動してください。<br>PDFが表示されない場合は <a href="' + pdfUrl + '" class="text-gold-dark hover:underline" target="_blank">こちらから開く</a></p></div>';
